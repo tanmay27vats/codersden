@@ -1,0 +1,1189 @@
+<!DOCTYPE html><html
+lang="en-US" prefix="og: http://ogp.me/ns#"><head><link
+rel="stylesheet" type="text/css" href="https://codersden.in/wp-content/cache/minify/9174e.css" media="all" /><meta
+charset="UTF-8"><meta
+name="viewport" content="width=device-width, initial-scale=1"><link
+rel="profile" href="http://gmpg.org/xfn/11"><title>Laravel 5.7 HTTP URL Redirects - Coders Den</title><style>@font-face {font-family: "sw-icon-font";src:url("https://codersden.in/wp-content/plugins/social-warfare/assets/fonts/sw-icon-font.eot?ver=3.3.3");src:url("https://codersden.in/wp-content/plugins/social-warfare/assets/fonts/sw-icon-font.eot?ver=3.3.3#iefix") format("embedded-opentype"),url("https://codersden.in/wp-content/plugins/social-warfare/assets/fonts/sw-icon-font.woff?ver=3.3.3") format("woff"),
+	url("https://codersden.in/wp-content/plugins/social-warfare/assets/fonts/sw-icon-font.ttf?ver=3.3.3") format("truetype"),url("https://codersden.in/wp-content/plugins/social-warfare/assets/fonts/sw-icon-font.svg?ver=3.3.3#1445203416") format("svg");font-weight: normal;font-style: normal;}</style><link
+rel="canonical" href="https://codersden.in/laravel-5-7-http-url-redirects/" /><meta
+property="og:locale" content="en_US" /><meta
+property="og:type" content="article" /><meta
+property="og:title" content="Laravel 5.7 HTTP URL Redirects - Coders Den" /><meta
+property="og:description" content="Today in this article we will discuss the HTTP URL Redirection in Laravel 5.7.  Laravel HTTP Redirect is an instance of Illuminate\Http\RedirectResponse class, which contains all necessary headers that needed to redirect &hellip;" /><meta
+property="og:url" content="https://codersden.in/laravel-5-7-http-url-redirects/" /><meta
+property="og:site_name" content="Coders Den" /><meta
+property="article:tag" content="Laravel" /><meta
+property="article:tag" content="Laravel 5.7" /><meta
+property="article:tag" content="Laravel 5.7 Project" /><meta
+property="article:tag" content="Laravel 5.7 Setup" /><meta
+property="article:tag" content="Laravel PHP Framework" /><meta
+property="article:tag" content="Setup Laravel on Windows" /><meta
+property="article:section" content="Laravel" /><meta
+property="article:published_time" content="2018-10-04T19:07:35+00:00" /><meta
+property="og:image" content="https://codersden.in/wp-content/uploads/2018/02/Laravel.jpg" /><meta
+property="og:image:secure_url" content="https://codersden.in/wp-content/uploads/2018/02/Laravel.jpg" /><meta
+property="og:image:width" content="600" /><meta
+property="og:image:height" content="300" /><meta
+property="og:image:alt" content="Laravel" /><meta
+name="twitter:card" content="summary_large_image" /><meta
+name="twitter:description" content="Today in this article we will discuss the HTTP URL Redirection in Laravel 5.7.  Laravel HTTP Redirect is an instance of Illuminate\Http\RedirectResponse class, which contains all necessary headers that needed to redirect &hellip;" /><meta
+name="twitter:title" content="Laravel 5.7 HTTP URL Redirects - Coders Den" /><meta
+name="twitter:image" content="https://codersden.in/wp-content/uploads/2018/02/Laravel.jpg" /><link
+rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' /><link
+rel='dns-prefetch' href='//fonts.googleapis.com' /><link
+rel='dns-prefetch' href='//s.w.org' /><link
+rel="alternate" type="application/rss+xml" title="Coders Den &raquo; Feed" href="https://codersden.in/feed/" /><link
+rel="alternate" type="application/rss+xml" title="Coders Den &raquo; Comments Feed" href="https://codersden.in/comments/feed/" /><link
+rel="alternate" type="application/rss+xml" title="Coders Den &raquo; Laravel 5.7 HTTP URL Redirects Comments Feed" href="https://codersden.in/laravel-5-7-http-url-redirects/feed/" /> <script type="text/javascript">window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/codersden.in\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);</script> <style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style><link
+rel='stylesheet' id='sb-font-awesome-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='all' /><style id='ez-toc-inline-css' type='text/css'>div#ez-toc-container p.ez-toc-title {font-size: 120%;}div#ez-toc-container p.ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container {background: #fff;border: 1px solid #ddd;}div#ez-toc-container p.ez-toc-title {color: #1e9296;}div#ez-toc-container ul.ez-toc-list a {color: #1e9296;}div#ez-toc-container ul.ez-toc-list a:hover {color: #dd574c;}div#ez-toc-container ul.ez-toc-list a:visited {color: #bf2a1c;}</style><link
+rel='stylesheet' id='hitmag-fonts-css'  href='//fonts.googleapis.com/css?family=Ubuntu%3A400%2C500%2C700%7CLato%3A400%2C700%2C400italic%2C700italic%7COpen+Sans%3A400%2C400italic%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' /> <script type="text/javascript" src="https://codersden.in/wp-content/cache/minify/df983.js"></script> <script type='text/javascript'>var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"https:\/\/codersden.in\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};</script> <script type="text/javascript" src="https://codersden.in/wp-content/cache/minify/49ed6.js"></script> <!--[if lt IE 9]> <script type='text/javascript' src='https://codersden.in/wp-content/themes/hitmag/js/html5shiv.min.js?ver=4.9.8'></script> <![endif]--><link
+rel='https://api.w.org/' href='https://codersden.in/wp-json/' /><link
+rel="EditURI" type="application/rsd+xml" title="RSD" href="https://codersden.in/xmlrpc.php?rsd" /><link
+rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://codersden.in/wp-includes/wlwmanifest.xml" /><meta
+name="generator" content="WordPress 4.9.8" /><link
+rel='shortlink' href='https://codersden.in/?p=389' /><link
+rel="alternate" type="application/json+oembed" href="https://codersden.in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcodersden.in%2Flaravel-5-7-http-url-redirects%2F" /><link
+rel="alternate" type="text/xml+oembed" href="https://codersden.in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcodersden.in%2Flaravel-5-7-http-url-redirects%2F&#038;format=xml" /><style type="text/css">.ez-toc-icon-toggle:before {
+color: #1e9296;
+}
+div#ez-toc-container p.ez-toc-title {
+font-weight: bold;
+}</style> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111542487-2"></script> <script>window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111542487-2');</script>  <script>!function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '402537686872461');
+  fbq('track', 'PageView');</script> <noscript><img
+height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=402537686872461&ev=PageView&noscript=1"
+/></noscript>
+ <script type="text/javascript">(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//codersden.in/?wordfence_lh=1&hid=A702A4494EE9089FEDAA27C65BD66421');</script> <style type="text/css">button,
+			input[type="button"],
+			input[type="reset"],
+			input[type="submit"] {
+				background: #1e9296;
+			}
+
+            .th-readmore {
+                background: #1e9296;
+            }           
+
+            a:hover {
+                color: #1e9296;
+            } 
+
+            .main-navigation a:hover {
+                background-color: #1e9296;
+            }
+
+            .main-navigation .current_page_item > a,
+            .main-navigation .current-menu-item > a,
+            .main-navigation .current_page_ancestor > a,
+            .main-navigation .current-menu-ancestor > a {
+                background-color: #1e9296;
+            }
+
+            #main-nav-button:hover {
+                background-color: #1e9296;
+            }
+
+            .post-navigation .post-title:hover {
+                color: #1e9296;
+            }
+
+            .top-navigation a:hover {
+                color: #1e9296;
+            }
+
+            .top-navigation ul ul a:hover {
+                background: #1e9296;
+            }
+
+            #top-nav-button:hover {
+                color: #1e9296;
+            }
+
+            .responsive-mainnav li a:hover,
+            .responsive-topnav li a:hover {
+                background: #1e9296;
+            }
+
+            #hm-search-form .search-form .search-submit {
+                background-color: #1e9296;
+            }
+
+            .nav-links .current {
+                background: #1e9296;
+            }
+
+            .elementor-widget-container h5,
+            .widget-title {
+                border-bottom: 2px solid #1e9296;
+            }
+
+            .footer-widget-title {
+                border-bottom: 2px solid #1e9296;
+            }
+
+            .widget-area a:hover {
+                color: #1e9296;
+            }
+
+            .footer-widget-area .widget a:hover {
+                color: #1e9296;
+            }
+
+            .site-info a:hover {
+                color: #1e9296;
+            }
+
+            .search-form .search-submit {
+                background: #1e9296;
+            }
+
+            .hmb-entry-title a:hover {
+                color: #1e9296;
+            }
+
+            .hmb-entry-meta a:hover,
+            .hms-meta a:hover {
+                color: #1e9296;
+            }
+
+            .hms-title a:hover {
+                color: #1e9296;
+            }
+
+            .hmw-grid-post .post-title a:hover {
+                color: #1e9296;
+            }
+
+            .footer-widget-area .hmw-grid-post .post-title a:hover,
+            .footer-widget-area .hmb-entry-title a:hover,
+            .footer-widget-area .hms-title a:hover {
+                color: #1e9296;
+            }
+
+            .hm-tabs-wdt .ui-state-active {
+                border-bottom: 2px solid #1e9296;
+            }
+
+            a.hm-viewall {
+                background: #1e9296;
+            }
+
+            #hitmag-tags a,
+            .widget_tag_cloud .tagcloud a {
+                background: #1e9296;
+            }
+
+            .site-title a {
+                color: #1e9296;
+            }
+
+            .hitmag-post .entry-title a:hover {
+                color: #1e9296;
+            }
+
+            .hitmag-post .entry-meta a:hover {
+                color: #1e9296;
+            }
+
+            .cat-links a {
+                color: #1e9296;
+            }
+
+            .hitmag-single .entry-meta a:hover {
+                color: #1e9296;
+            }
+
+            .hitmag-single .author a:hover {
+                color: #1e9296;
+            }
+
+            .hm-author-content .author-posts-link {
+                color: #1e9296;
+            }
+
+            .hm-tags-links a:hover {
+                background: #1e9296;
+            }
+
+            .hm-tagged {
+                background: #1e9296;
+            }
+
+            .hm-edit-link a.post-edit-link {
+                background: #1e9296;
+            }
+
+            .arc-page-title {
+                border-bottom: 2px solid #1e9296;
+            }
+
+            .srch-page-title {
+                border-bottom: 2px solid #1e9296;
+            }
+
+            .hm-slider-details .cat-links {
+                background: #1e9296;
+            }
+
+            .hm-rel-post .post-title a:hover {
+                color: #1e9296;
+            }
+
+            .comment-author a {
+                color: #1e9296;
+            }
+
+            .comment-metadata a:hover,
+            .comment-metadata a:focus,
+            .pingback .comment-edit-link:hover,
+            .pingback .comment-edit-link:focus {
+                color: #1e9296;
+            }
+
+            .comment-reply-link:hover,
+            .comment-reply-link:focus {
+                background: #1e9296;
+            }
+
+            .required {
+                color: #1e9296;
+            }
+
+            blockquote {
+                border-left: 3px solid #1e9296;
+            }
+
+            .comment-reply-title small a:before {
+                color: #1e9296;
+            }
+            
+            .woocommerce ul.products li.product h3:hover,
+            .woocommerce-widget-area ul li a:hover,
+            .woocommerce-loop-product__title:hover {
+                color: #1e9296;
+            }
+
+            .woocommerce-product-search input[type="submit"],
+            .woocommerce #respond input#submit, 
+            .woocommerce a.button, 
+            .woocommerce button.button, 
+            .woocommerce input.button,
+            .woocommerce nav.woocommerce-pagination ul li a:focus,
+            .woocommerce nav.woocommerce-pagination ul li a:hover,
+            .woocommerce nav.woocommerce-pagination ul li span.current,
+            .woocommerce span.onsale,
+            .woocommerce-widget-area .widget-title,
+            .woocommerce #respond input#submit.alt,
+            .woocommerce a.button.alt,
+            .woocommerce button.button.alt,
+            .woocommerce input.button.alt {
+                background: #1e9296;
+            }</style><link
+rel="pingback" href="https://codersden.in/xmlrpc.php"><style type="text/css">.site-title a,
+		.site-description {
+			color: #1e9296;
+		}</style><style type="text/css" id="custom-background-css">body.custom-background { background-color: #ffffff; background-image: url("https://codersden.in/wp-content/uploads/2017/12/desktop-top.jpg"); background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; }</style><link
+rel="icon" href="https://codersden.in/wp-content/uploads/2018/02/cropped-html-tag-32x32.jpg" sizes="32x32" /><link
+rel="icon" href="https://codersden.in/wp-content/uploads/2018/02/cropped-html-tag-192x192.jpg" sizes="192x192" /><link
+rel="apple-touch-icon-precomposed" href="https://codersden.in/wp-content/uploads/2018/02/cropped-html-tag-180x180.jpg" /><meta
+name="msapplication-TileImage" content="https://codersden.in/wp-content/uploads/2018/02/cropped-html-tag-270x270.jpg" /><style type="text/css" id="wp-custom-css">code, kbd, tt, var {
+    background-color: rgba(243, 228, 175, 0.60);
+    padding: 5px;
+    color: #000;
+}</style></head><body
+class="post-template-default single single-post postid-389 single-format-standard custom-background wp-custom-logo th-right-sidebar"><div
+id="fb-root"></div> <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> <div
+id="page" class="site hitmag-wrapper">
+<a
+class="skip-link screen-reader-text" href="#content">Skip to content</a><header
+id="masthead" class="site-header" role="banner"><div
+class="hm-top-bar"><div
+class="hm-container"><div
+class="hm-social-menu"><div
+id="hm-menu-social" class="menu"><ul
+id="menu-social-items" class="menu-items"><li
+id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a
+title="Facebook" target="_blank" href="https://www.facebook.com/CodersDen1/"><span
+class="screen-reader-text">Facebook</span></a></li><li
+id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a
+title="Google+" target="_blank" href="https://plus.google.com/106149521355462295694"><span
+class="screen-reader-text">Google+</span></a></li><li
+id="menu-item-15" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15"><a
+title="YouTube" target="_blank" href="https://www.youtube.com/channel/UC5zvFUhZvi3SvHB8fSAKo9w"><span
+class="screen-reader-text">YouTube</span></a></li><li
+id="menu-item-174" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-174"><a
+title="Instagram" target="_blank" href="https://www.instagram.com/codersden/"><span
+class="screen-reader-text">Instagram</span></a></li></ul></div></div></div></div><div
+class="header-main-area"><div
+class="hm-container"><div
+class="site-branding"><div
+class="site-branding-content"><div
+class="hm-logo">
+<a
+href="https://codersden.in/" class="custom-logo-link" rel="home" itemprop="url"><img
+width="100" height="53" src="https://codersden.in/wp-content/uploads/2018/02/cropped-CodersDen-Logo.png" class="custom-logo" alt="Coders Den" itemprop="logo" /></a></div><div
+class="hm-site-title"><p
+class="site-title"><a
+href="https://codersden.in/" rel="home">Coders Den</a></p><p
+class="site-description">Think Twice Code Once</p></div></div></div></div></div><div
+class="hm-nav-container">
+<nav
+id="site-navigation" class="main-navigation" role="navigation"><div
+class="hm-container"><div
+class="menu-main-menu-container"><ul
+id="primary-menu" class="menu"><li
+id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-21"><a
+href="http://codersden.in">Home</a></li><li
+id="menu-item-175" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-175"><a
+href="https://codersden.in/blog/">Blog</a></li><li
+id="menu-item-91" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-91"><a
+href="https://codersden.in/category/php/">PHP</a></li><li
+id="menu-item-351" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-351"><a
+href="https://codersden.in/category/ruby/">Ruby</a></li><li
+id="menu-item-92" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-92"><a
+href="https://codersden.in/category/wordpress/">WordPress</a></li><li
+id="menu-item-93" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-93"><a
+href="https://codersden.in/category/mysql/">MySql</a></li><li
+id="menu-item-94" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-94"><a
+href="https://codersden.in/category/htaccess/">htaccess</a></li><li
+id="menu-item-95" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-95"><a
+href="https://codersden.in/category/linux/">Linux</a></li><li
+id="menu-item-96" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-96"><a
+href="https://codersden.in/category/laravel/">Laravel</a></li><li
+id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a
+href="https://codersden.in/contact-us/">Contact Us</a></li></ul></div><div
+class="hm-search-button-icon"></div><div
+class="hm-search-box-container"><div
+class="hm-search-box"><form
+role="search" method="get" class="search-form" action="https://codersden.in/">
+<label>
+<span
+class="screen-reader-text">Search for:</span>
+<input
+type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+</label>
+<input
+type="submit" class="search-submit" value="Search" /></form></div></div></div>
+</nav><div
+class="hm-nwrap">
+<a
+href="#" class="navbutton" id="main-nav-button">Main Menu</a></div><div
+class="responsive-mainnav"></div></div>
+</header><div
+id="content" class="site-content"><div
+class="hm-container"><div
+id="primary" class="content-area">
+<main
+id="main" class="site-main" role="main">
+<article
+id="post-389" class="hitmag-single post-389 post type-post status-publish format-standard has-post-thumbnail hentry category-how-to category-interview-qas category-laravel tag-laravel tag-laravel-5-7 tag-laravel-5-7-project tag-laravel-5-7-setup tag-laravel-php-framework tag-setup-laravel-on-windows">
+<header
+class="entry-header"><div
+class="cat-links"><a
+href="https://codersden.in/category/how-to/" rel="category tag">How To</a> / <a
+href="https://codersden.in/category/interview-qas/" rel="category tag">Interview QAs</a> / <a
+href="https://codersden.in/category/laravel/" rel="category tag">Laravel</a></div><h1 class="entry-title">Laravel 5.7 HTTP URL Redirects</h1><div
+class="entry-meta">
+<span
+class="comments-link"><a
+href="https://codersden.in/laravel-5-7-http-url-redirects/#respond">Leave a Comment</a></span></div>
+</header>
+<a
+class="image-link" href="https://codersden.in/wp-content/uploads/2018/02/Laravel.jpg"><img
+width="600" height="300" src="https://codersden.in/wp-content/uploads/2018/02/Laravel.jpg" class="attachment-hitmag-featured size-hitmag-featured wp-post-image" alt="Laravel" srcset="https://codersden.in/wp-content/uploads/2018/02/Laravel.jpg 600w, https://codersden.in/wp-content/uploads/2018/02/Laravel-300x150.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /></a><div
+class="entry-content"><p>Today in this article we will discuss the HTTP URL Redirection in Laravel 5.7.  Laravel HTTP Redirect is an instance of <code>Illuminate\Http\RedirectResponse</code> class, which contains all necessary headers that needed to redirect the user to specific URL. Laravel provides many ways to generate <code>RedirectResponse</code> instance. <code>redirect</code> helper is the simplest way to redirect user to another URL. <code>redirect</code> helper is a global helper method.</p><div
+id="ez-toc-container" class="counter-hierarchy counter-decimal"><div
+class="ez-toc-title-container"><p
+class="ez-toc-title">Table of Contents</p>
+<span
+class="ez-toc-title-toggle"><a
+class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"><i
+class="ez-toc-glyphicon ez-toc-icon-toggle"></i></a></span></div>
+<nav><ul
+class="ez-toc-list"><li><a
+href="#Redirect_To_URL_in_Laravel" title="Redirect To URL in Laravel">Redirect To URL in Laravel</a></li><li><a
+href="#Redirect_Back_To_The_Previous_Page_in_Laravel" title="Redirect Back To The Previous Page in Laravel">Redirect Back To The Previous Page in Laravel</a></li><li><a
+href="#Redirect_To_Named_Routes_in_Laravel" title="Redirect To Named Routes in Laravel">Redirect To Named Routes in Laravel</a></li><li><a
+href="#Redirect_To_Named_Routes_With_Parameters_in_Laravel" title="Redirect To Named Routes With Parameters in Laravel">Redirect To Named Routes With Parameters in Laravel</a></li><li><a
+href="#Redirect_To_Controller_Action_in_Laravel" title="Redirect To Controller Action in Laravel">Redirect To Controller Action in Laravel</a></li><li><a
+href="#Redirect_To_Controller_Action_With_Parameters_in_Laravel" title="Redirect To Controller Action With Parameters in Laravel">Redirect To Controller Action With Parameters in Laravel</a></li><li><a
+href="#Redirect_With_Flashed_Session_Data_in_Laravel" title="Redirect With Flashed Session Data in Laravel">Redirect With Flashed Session Data in Laravel</a><ul><li><a
+href="#Display_Flashed_Session_Data_in_View_File" title="Display Flashed Session Data in View File">Display Flashed Session Data in View File</a></li></ul></li><li><a
+href="#Conclusion" title="Conclusion">Conclusion</a></li></ul></nav></div><h2><span
+class="ez-toc-section" id="Redirect_To_URL_in_Laravel">Redirect To URL in Laravel</span></h2><p>This is the simplest way to redirect the user to a particular URL.</p><div
+id="crayon-5bc0723e5b2f9639951383" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;"><div
+class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span
+class="crayon-title"></span><div
+class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div
+class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-expand-button" title="Expand Code"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-copy-button" title="Copy"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-popup-button" title="Open Code In New Window"><div
+class="crayon-button-icon"></div></div></div></div><div
+class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div><div
+class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+Route::get('/dashboard', function () {
+    return redirect('/home/dashboard');
+});</textarea></div><div
+class="crayon-main" style=""><table
+class="crayon-table"><tr
+class="crayon-row"><td
+class="crayon-nums " data-settings="show"><div
+class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div
+class="crayon-num" data-line="crayon-5bc0723e5b2f9639951383-1">1</div><div
+class="crayon-num crayon-striped-num" data-line="crayon-5bc0723e5b2f9639951383-2">2</div><div
+class="crayon-num" data-line="crayon-5bc0723e5b2f9639951383-3">3</div></div></td><td
+class="crayon-code"><div
+class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div
+class="crayon-line" id="crayon-5bc0723e5b2f9639951383-1"><span
+class="crayon-v">Route</span><span
+class="crayon-o">::</span><span
+class="crayon-e">get</span><span
+class="crayon-sy">(</span><span
+class="crayon-s">'/dashboard'</span><span
+class="crayon-sy">,</span><span
+class="crayon-h"> </span><span
+class="crayon-t">function</span><span
+class="crayon-h"> </span><span
+class="crayon-sy">(</span><span
+class="crayon-sy">)</span><span
+class="crayon-h"> </span><span
+class="crayon-sy">{</span></div><div
+class="crayon-line crayon-striped-line" id="crayon-5bc0723e5b2f9639951383-2"><span
+class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class="crayon-st">return</span><span
+class="crayon-h"> </span><span
+class="crayon-e">redirect</span><span
+class="crayon-sy">(</span><span
+class="crayon-s">'/home/dashboard'</span><span
+class="crayon-sy">)</span><span
+class="crayon-sy">;</span></div><div
+class="crayon-line" id="crayon-5bc0723e5b2f9639951383-3"><span
+class="crayon-sy">}</span><span
+class="crayon-sy">)</span><span
+class="crayon-sy">;</span></div></div></td></tr></table></div></div><p><strong>Note:</strong> In the above example, If user hits the <code>/dashboard</code> URL then we are redirecting that user to new URL and that is <code>/home/dashboard</code>.</p><h2><span
+class="ez-toc-section" id="Redirect_Back_To_The_Previous_Page_in_Laravel">Redirect Back To The Previous Page in Laravel</span></h2><p>Laravel is a very powerful PHP framework that allows the user to redirect back to the previous page with the <code>back()</code> method. This <code>redirect back()</code> method is useful when you submit the form and validate on submission and if validation gets failed you may redirect the user to the previous page.</p><div
+id="crayon-5bc0723e5b2ff056237917" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;"><div
+class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span
+class="crayon-title"></span><div
+class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div
+class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-expand-button" title="Expand Code"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-copy-button" title="Copy"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-popup-button" title="Open Code In New Window"><div
+class="crayon-button-icon"></div></div></div></div><div
+class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div><div
+class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+return redirect()-&gt;back();
+OR
+return redirect()-&gt;back()-&gt;withInput();</textarea></div><div
+class="crayon-main" style=""><table
+class="crayon-table"><tr
+class="crayon-row"><td
+class="crayon-nums " data-settings="show"><div
+class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div
+class="crayon-num" data-line="crayon-5bc0723e5b2ff056237917-1">1</div><div
+class="crayon-num crayon-striped-num" data-line="crayon-5bc0723e5b2ff056237917-2">2</div><div
+class="crayon-num" data-line="crayon-5bc0723e5b2ff056237917-3">3</div></div></td><td
+class="crayon-code"><div
+class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div
+class="crayon-line" id="crayon-5bc0723e5b2ff056237917-1"><span
+class="crayon-st">return</span><span
+class="crayon-h"> </span><span
+class="crayon-e">redirect</span><span
+class="crayon-sy">(</span><span
+class="crayon-sy">)</span><span
+class="crayon-o">-&gt;</span><span
+class="crayon-e">back</span><span
+class="crayon-sy">(</span><span
+class="crayon-sy">)</span><span
+class="crayon-sy">;</span></div><div
+class="crayon-line crayon-striped-line" id="crayon-5bc0723e5b2ff056237917-2"><span
+class="crayon-st">OR</span></div><div
+class="crayon-line" id="crayon-5bc0723e5b2ff056237917-3"><span
+class="crayon-st">return</span><span
+class="crayon-h"> </span><span
+class="crayon-e">redirect</span><span
+class="crayon-sy">(</span><span
+class="crayon-sy">)</span><span
+class="crayon-o">-&gt;</span><span
+class="crayon-e">back</span><span
+class="crayon-sy">(</span><span
+class="crayon-sy">)</span><span
+class="crayon-o">-&gt;</span><span
+class="crayon-e">withInput</span><span
+class="crayon-sy">(</span><span
+class="crayon-sy">)</span><span
+class="crayon-sy">;</span></div></div></td></tr></table></div></div><p></p><h2><span
+class="ez-toc-section" id="Redirect_To_Named_Routes_in_Laravel">Redirect To Named Routes in Laravel</span></h2><p>When you call the redirect helper without any parameters then it returns an instance of <code>Illuminate\<span
+class="token package">Routing<span
+class="token punctuation">\</span>Redirector</span></code> class. Now you may use the <code>route</code> method having route&#8217;s name to redirect the user to that URL.</p><div
+id="crayon-5bc0723e5b302069917351" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;"><div
+class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span
+class="crayon-title"></span><div
+class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div
+class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-expand-button" title="Expand Code"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-copy-button" title="Copy"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-popup-button" title="Open Code In New Window"><div
+class="crayon-button-icon"></div></div></div></div><div
+class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div><div
+class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+return redirect()-&gt;route('login');</textarea></div><div
+class="crayon-main" style=""><table
+class="crayon-table"><tr
+class="crayon-row"><td
+class="crayon-nums " data-settings="show"><div
+class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div
+class="crayon-num" data-line="crayon-5bc0723e5b302069917351-1">1</div></div></td><td
+class="crayon-code"><div
+class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div
+class="crayon-line" id="crayon-5bc0723e5b302069917351-1"><span
+class="crayon-st">return</span><span
+class="crayon-h"> </span><span
+class="crayon-e">redirect</span><span
+class="crayon-sy">(</span><span
+class="crayon-sy">)</span><span
+class="crayon-o">-&gt;</span><span
+class="crayon-e">route</span><span
+class="crayon-sy">(</span><span
+class="crayon-s">'login'</span><span
+class="crayon-sy">)</span><span
+class="crayon-sy">;</span></div></div></td></tr></table></div></div><p></p><h2><span
+class="ez-toc-section" id="Redirect_To_Named_Routes_With_Parameters_in_Laravel">Redirect To Named Routes With Parameters in Laravel</span></h2><p>If your route has parameters like <code>/profile/{id}</code> then you may pass them as the second argument to the <code>route</code> method</p><div
+id="crayon-5bc0723e5b303724024199" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;"><div
+class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span
+class="crayon-title"></span><div
+class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div
+class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-expand-button" title="Expand Code"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-copy-button" title="Copy"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-popup-button" title="Open Code In New Window"><div
+class="crayon-button-icon"></div></div></div></div><div
+class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div><div
+class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+return redirect()-&gt;route('profile', ['id' =&gt; 1]);</textarea></div><div
+class="crayon-main" style=""><table
+class="crayon-table"><tr
+class="crayon-row"><td
+class="crayon-nums " data-settings="show"><div
+class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div
+class="crayon-num" data-line="crayon-5bc0723e5b303724024199-1">1</div></div></td><td
+class="crayon-code"><div
+class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div
+class="crayon-line" id="crayon-5bc0723e5b303724024199-1"><span
+class="crayon-st">return</span><span
+class="crayon-h"> </span><span
+class="crayon-e">redirect</span><span
+class="crayon-sy">(</span><span
+class="crayon-sy">)</span><span
+class="crayon-o">-&gt;</span><span
+class="crayon-e">route</span><span
+class="crayon-sy">(</span><span
+class="crayon-s">'profile'</span><span
+class="crayon-sy">,</span><span
+class="crayon-h"> </span><span
+class="crayon-sy">[</span><span
+class="crayon-s">'id'</span><span
+class="crayon-h"> </span><span
+class="crayon-o">=</span><span
+class="crayon-o">&gt;</span><span
+class="crayon-h"> </span><span
+class="crayon-cn">1</span><span
+class="crayon-sy">]</span><span
+class="crayon-sy">)</span><span
+class="crayon-sy">;</span></div></div></td></tr></table></div></div><p></p><h2><span
+class="ez-toc-section" id="Redirect_To_Controller_Action_in_Laravel">Redirect To Controller Action in Laravel</span></h2><p>You may redirect the user to any Controller Action.</p><div
+id="crayon-5bc0723e5b305786086096" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;"><div
+class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span
+class="crayon-title"></span><div
+class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div
+class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-expand-button" title="Expand Code"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-copy-button" title="Copy"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-popup-button" title="Open Code In New Window"><div
+class="crayon-button-icon"></div></div></div></div><div
+class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div><div
+class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+return redirect()-&gt;action('HomeController@index');</textarea></div><div
+class="crayon-main" style=""><table
+class="crayon-table"><tr
+class="crayon-row"><td
+class="crayon-nums " data-settings="show"><div
+class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div
+class="crayon-num" data-line="crayon-5bc0723e5b305786086096-1">1</div></div></td><td
+class="crayon-code"><div
+class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div
+class="crayon-line" id="crayon-5bc0723e5b305786086096-1"><span
+class="crayon-st">return</span><span
+class="crayon-h"> </span><span
+class="crayon-e">redirect</span><span
+class="crayon-sy">(</span><span
+class="crayon-sy">)</span><span
+class="crayon-o">-&gt;</span><span
+class="crayon-e">action</span><span
+class="crayon-sy">(</span><span
+class="crayon-s">'HomeController@index'</span><span
+class="crayon-sy">)</span><span
+class="crayon-sy">;</span></div></div></td></tr></table></div></div><p></p><h2><span
+class="ez-toc-section" id="Redirect_To_Controller_Action_With_Parameters_in_Laravel">Redirect To Controller Action With Parameters in Laravel</span></h2><p>If your Controller&#8217;s Action required parameters. Then you can pass them as the second argument to the Action method.</p><div
+id="crayon-5bc0723e5b307056282251" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;"><div
+class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span
+class="crayon-title"></span><div
+class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div
+class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-expand-button" title="Expand Code"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-copy-button" title="Copy"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-popup-button" title="Open Code In New Window"><div
+class="crayon-button-icon"></div></div></div></div><div
+class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div><div
+class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+return redirect()-&gt;action(
+    'UserController@profile', ['id' =&gt; 1]
+);</textarea></div><div
+class="crayon-main" style=""><table
+class="crayon-table"><tr
+class="crayon-row"><td
+class="crayon-nums " data-settings="show"><div
+class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div
+class="crayon-num" data-line="crayon-5bc0723e5b307056282251-1">1</div><div
+class="crayon-num crayon-striped-num" data-line="crayon-5bc0723e5b307056282251-2">2</div><div
+class="crayon-num" data-line="crayon-5bc0723e5b307056282251-3">3</div></div></td><td
+class="crayon-code"><div
+class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div
+class="crayon-line" id="crayon-5bc0723e5b307056282251-1"><span
+class="crayon-st">return</span><span
+class="crayon-h"> </span><span
+class="crayon-e">redirect</span><span
+class="crayon-sy">(</span><span
+class="crayon-sy">)</span><span
+class="crayon-o">-&gt;</span><span
+class="crayon-e">action</span><span
+class="crayon-sy">(</span></div><div
+class="crayon-line crayon-striped-line" id="crayon-5bc0723e5b307056282251-2"><span
+class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class="crayon-s">'UserController@profile'</span><span
+class="crayon-sy">,</span><span
+class="crayon-h"> </span><span
+class="crayon-sy">[</span><span
+class="crayon-s">'id'</span><span
+class="crayon-h"> </span><span
+class="crayon-o">=</span><span
+class="crayon-o">&gt;</span><span
+class="crayon-h"> </span><span
+class="crayon-cn">1</span><span
+class="crayon-sy">]</span></div><div
+class="crayon-line" id="crayon-5bc0723e5b307056282251-3"><span
+class="crayon-sy">)</span><span
+class="crayon-sy">;</span></div></div></td></tr></table></div></div><p></p><h2><span
+class="ez-toc-section" id="Redirect_With_Flashed_Session_Data_in_Laravel"><strong
+class="step">Redirect With Flashed Session Data in Laravel</strong></span></h2><p>You can redirect the user to another URL with some Session data. You need to pass the Session Key &amp; Value to <code>with</code> method.</p><div
+id="crayon-5bc0723e5b309435678181" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;"><div
+class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span
+class="crayon-title"></span><div
+class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div
+class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-expand-button" title="Expand Code"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-copy-button" title="Copy"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-popup-button" title="Open Code In New Window"><div
+class="crayon-button-icon"></div></div></div></div><div
+class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div><div
+class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+Route::post('user/profile', function () {
+    // Update the user's profile...
+
+    return redirect('dashboard')-&gt;with('status', 'Profile updated successfully!');
+});</textarea></div><div
+class="crayon-main" style=""><table
+class="crayon-table"><tr
+class="crayon-row"><td
+class="crayon-nums " data-settings="show"><div
+class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div
+class="crayon-num" data-line="crayon-5bc0723e5b309435678181-1">1</div><div
+class="crayon-num crayon-striped-num" data-line="crayon-5bc0723e5b309435678181-2">2</div><div
+class="crayon-num" data-line="crayon-5bc0723e5b309435678181-3">3</div><div
+class="crayon-num crayon-striped-num" data-line="crayon-5bc0723e5b309435678181-4">4</div><div
+class="crayon-num" data-line="crayon-5bc0723e5b309435678181-5">5</div></div></td><td
+class="crayon-code"><div
+class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div
+class="crayon-line" id="crayon-5bc0723e5b309435678181-1"><span
+class="crayon-v">Route</span><span
+class="crayon-o">::</span><span
+class="crayon-e">post</span><span
+class="crayon-sy">(</span><span
+class="crayon-s">'user/profile'</span><span
+class="crayon-sy">,</span><span
+class="crayon-h"> </span><span
+class="crayon-t">function</span><span
+class="crayon-h"> </span><span
+class="crayon-sy">(</span><span
+class="crayon-sy">)</span><span
+class="crayon-h"> </span><span
+class="crayon-sy">{</span></div><div
+class="crayon-line crayon-striped-line" id="crayon-5bc0723e5b309435678181-2"><span
+class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class="crayon-c">// Update the user's profile...</span></div><div
+class="crayon-line" id="crayon-5bc0723e5b309435678181-3">&nbsp;</div><div
+class="crayon-line crayon-striped-line" id="crayon-5bc0723e5b309435678181-4"><span
+class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class="crayon-st">return</span><span
+class="crayon-h"> </span><span
+class="crayon-e">redirect</span><span
+class="crayon-sy">(</span><span
+class="crayon-s">'dashboard'</span><span
+class="crayon-sy">)</span><span
+class="crayon-o">-&gt;</span><span
+class="crayon-e">with</span><span
+class="crayon-sy">(</span><span
+class="crayon-s">'status'</span><span
+class="crayon-sy">,</span><span
+class="crayon-h"> </span><span
+class="crayon-s">'Profile updated successfully!'</span><span
+class="crayon-sy">)</span><span
+class="crayon-sy">;</span></div><div
+class="crayon-line" id="crayon-5bc0723e5b309435678181-5"><span
+class="crayon-sy">}</span><span
+class="crayon-sy">)</span><span
+class="crayon-sy">;</span></div></div></td></tr></table></div></div><p></p><h3><span
+class="ez-toc-section" id="Display_Flashed_Session_Data_in_View_File">Display Flashed Session Data in View File</span></h3><p>After redirecting the user with flashed data you may display the flashed session data in the view file. Below example is using the <strong>Blade Syntax</strong>.</p><div
+id="crayon-5bc0723e5b30a357743329" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;"><div
+class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span
+class="crayon-title"></span><div
+class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div
+class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-expand-button" title="Expand Code"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-copy-button" title="Copy"><div
+class="crayon-button-icon"></div></div><div
+class="crayon-button crayon-popup-button" title="Open Code In New Window"><div
+class="crayon-button-icon"></div></div></div></div><div
+class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div><div
+class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+@if (session('status'))
+    &lt;div class="alert alert-success"&gt;
+        {{ session('status') }}
+    &lt;/div&gt;
+@endif</textarea></div><div
+class="crayon-main" style=""><table
+class="crayon-table"><tr
+class="crayon-row"><td
+class="crayon-nums " data-settings="show"><div
+class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div
+class="crayon-num" data-line="crayon-5bc0723e5b30a357743329-1">1</div><div
+class="crayon-num crayon-striped-num" data-line="crayon-5bc0723e5b30a357743329-2">2</div><div
+class="crayon-num" data-line="crayon-5bc0723e5b30a357743329-3">3</div><div
+class="crayon-num crayon-striped-num" data-line="crayon-5bc0723e5b30a357743329-4">4</div><div
+class="crayon-num" data-line="crayon-5bc0723e5b30a357743329-5">5</div></div></td><td
+class="crayon-code"><div
+class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div
+class="crayon-line" id="crayon-5bc0723e5b30a357743329-1"><span
+class="crayon-sy">@</span><span
+class="crayon-st">if</span><span
+class="crayon-h"> </span><span
+class="crayon-sy">(</span><span
+class="crayon-e">session</span><span
+class="crayon-sy">(</span><span
+class="crayon-s">'status'</span><span
+class="crayon-sy">)</span><span
+class="crayon-sy">)</span></div><div
+class="crayon-line crayon-striped-line" id="crayon-5bc0723e5b30a357743329-2"><span
+class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class="crayon-o">&lt;</span><span
+class="crayon-e">div </span><span
+class="crayon-t">class</span><span
+class="crayon-o">=</span><span
+class="crayon-s">"alert alert-success"</span><span
+class="crayon-o">&gt;</span></div><div
+class="crayon-line" id="crayon-5bc0723e5b30a357743329-3"><span
+class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class="crayon-sy">{</span><span
+class="crayon-sy">{</span><span
+class="crayon-h"> </span><span
+class="crayon-e">session</span><span
+class="crayon-sy">(</span><span
+class="crayon-s">'status'</span><span
+class="crayon-sy">)</span><span
+class="crayon-h"> </span><span
+class="crayon-sy">}</span><span
+class="crayon-sy">}</span></div><div
+class="crayon-line crayon-striped-line" id="crayon-5bc0723e5b30a357743329-4"><span
+class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class="crayon-o">&lt;</span><span
+class="crayon-o">/</span><span
+class="crayon-v">div</span><span
+class="crayon-o">&gt;</span></div><div
+class="crayon-line" id="crayon-5bc0723e5b30a357743329-5"><span
+class="crayon-sy">@</span><span
+class="crayon-st">endif</span></div></div></td></tr></table></div></div><p></p><h2><span
+class="ez-toc-section" id="Conclusion">Conclusion</span></h2><p>In this article, we discussed the methods/ways to redirect the user to another URL in Laravel 5.7. Hope you liked this article. If you need further clarification please visit the <a
+href="http://codersden.in/email-verification-new-feature-of-laravel-5-7/" target="_blank" rel="noopener">Laravel 5.7 official documentation website for HTTP redirections</a>.</p><div
+class="swp_social_panel swp_horizontal_panel  swp_flat_fresh  swp_default_full_color swp_individual_full_color swp_other_full_color  scale-100  scale-"  data-min-width='1100' " data-float-color="#ffffff" data-float="left" data-float-mobile="" style="" ><div
+class="nc_tweetContainer swp_facebook" data-network="facebook"><a
+rel="nofollow noreferrer noopener" target="_blank" href="https://www.facebook.com/share.php?u=https%3A%2F%2Fcodersden.in%2Flaravel-5-7-http-url-redirects%2F" data-link="https://www.facebook.com/share.php?u=https%3A%2F%2Fcodersden.in%2Flaravel-5-7-http-url-redirects%2F" class="nc_tweet"><span
+class="swp_count swp_hide"><span
+class="iconFiller"><span
+class="spaceManWilly"><i
+class="sw swp_facebook_icon"></i><span
+class="swp_share">Share</span></span></span></span></a></div><div
+class="nc_tweetContainer swp_twitter" data-network="twitter"><a
+rel="nofollow noreferrer noopener" target="_blank" href="https://twitter.com/intent/tweet?text=Laravel+5.7+HTTP+URL+Redirects&url=https%3A%2F%2Fcodersden.in%2Flaravel-5-7-http-url-redirects%2F" data-link="https://twitter.com/intent/tweet?text=Laravel+5.7+HTTP+URL+Redirects&url=https%3A%2F%2Fcodersden.in%2Flaravel-5-7-http-url-redirects%2F" class="nc_tweet"><span
+class="swp_count swp_hide"><span
+class="iconFiller"><span
+class="spaceManWilly"><i
+class="sw swp_twitter_icon"></i><span
+class="swp_share">Tweet</span></span></span></span></a></div><div
+class="nc_tweetContainer swp_pinterest" data-network="pinterest"><a
+rel="nofollow noreferrer noopener" class="nc_tweet noPop" onClick="var e=document.createElement('script');
+e.setAttribute('type','text/javascript');
+e.setAttribute('charset','UTF-8');
+e.setAttribute('src','//assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);
+document.body.appendChild(e);
+" ><span
+class="swp_count swp_hide"><span
+class="iconFiller"><span
+class="spaceManWilly"><i
+class="sw swp_pinterest_icon"></i><span
+class="swp_share">Pin</span></span></span></span></a></div><div
+class="nc_tweetContainer swp_google_plus" data-network="google_plus"><a
+rel="nofollow noreferrer noopener" target="_blank" href="https://plus.google.com/share?url=https%3A%2F%2Fcodersden.in%2Flaravel-5-7-http-url-redirects%2F" data-link="https://plus.google.com/share?url=https%3A%2F%2Fcodersden.in%2Flaravel-5-7-http-url-redirects%2F" class="nc_tweet"><span
+class="swp_count swp_hide"><span
+class="iconFiller"><span
+class="spaceManWilly"><i
+class="sw swp_google_plus_icon"></i><span
+class="swp_share">+1</span></span></span></span></a></div><div
+class="nc_tweetContainer swp_linkedin" data-network="linkedin"><a
+rel="nofollow noreferrer noopener" target="_blank" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fcodersden.in%2Flaravel-5-7-http-url-redirects%2F" data-link="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fcodersden.in%2Flaravel-5-7-http-url-redirects%2F" class="nc_tweet"><span
+class="swp_count swp_hide"><span
+class="iconFiller"><span
+class="spaceManWilly"><i
+class="sw swp_linkedin_icon"></i><span
+class="swp_share">Share</span></span></span></span></a></div><div
+class="nc_tweetContainer total_shares total_sharesalt" ><span
+class="swp_count ">0 <span
+class="swp_label">Shares</span></span></div></div><div
+class="swp-content-locator"></div></div><footer
+class="entry-footer">
+<span
+class="hm-tags-links"><span
+class="hm-tagged">Tagged</span><a
+href="https://codersden.in/tag/laravel/" rel="tag">Laravel</a><a
+href="https://codersden.in/tag/laravel-5-7/" rel="tag">Laravel 5.7</a><a
+href="https://codersden.in/tag/laravel-5-7-project/" rel="tag">Laravel 5.7 Project</a><a
+href="https://codersden.in/tag/laravel-5-7-setup/" rel="tag">Laravel 5.7 Setup</a><a
+href="https://codersden.in/tag/laravel-php-framework/" rel="tag">Laravel PHP Framework</a><a
+href="https://codersden.in/tag/setup-laravel-on-windows/" rel="tag">Setup Laravel on Windows</a></span>	</footer>
+</article><div
+class="hm-related-posts"><div
+class="wt-container"><h4 class="widget-title">Related Posts</h4></div><div
+class="hmrp-container"><div
+class="hm-rel-post">
+<a
+href="https://codersden.in/email-verification-new-feature-of-laravel-5-7/" rel="bookmark" title="Email Verification &#8211; New Feature of Laravel 5.7">
+<img
+width="348" height="215" src="https://codersden.in/wp-content/uploads/2018/02/Laravel-348x215.jpg" class="attachment-hitmag-grid size-hitmag-grid wp-post-image" alt="Laravel" />                    </a><h3 class="post-title">
+<a
+href="https://codersden.in/email-verification-new-feature-of-laravel-5-7/" rel="bookmark" title="Email Verification &#8211; New Feature of Laravel 5.7">
+Email Verification &#8211; New Feature of Laravel 5.7                        </a></h3><p
+class="hms-meta"><time
+class="entry-date published" datetime="2018-10-03T18:40:28+00:00">October 3, 2018</time><time
+class="updated" datetime="2018-10-04T12:49:43+00:00">October 4, 2018</time></p></div><div
+class="hm-rel-post">
+<a
+href="https://codersden.in/how-to-fix-laravel-sqlstate42000-syntax-error-or-access-violation-1071-specified-key-was-too-long/" rel="bookmark" title="How To Fix Laravel SQLSTATE[42000]: Syntax Error Or Access Violation 1071 Specified key was too long">
+<img
+width="348" height="215" src="https://codersden.in/wp-content/uploads/2018/02/Laravel-348x215.jpg" class="attachment-hitmag-grid size-hitmag-grid wp-post-image" alt="Laravel" />                    </a><h3 class="post-title">
+<a
+href="https://codersden.in/how-to-fix-laravel-sqlstate42000-syntax-error-or-access-violation-1071-specified-key-was-too-long/" rel="bookmark" title="How To Fix Laravel SQLSTATE[42000]: Syntax Error Or Access Violation 1071 Specified key was too long">
+How To Fix Laravel SQLSTATE[42000]: Syntax Error Or Access Violation 1071 Specified key was too long                        </a></h3><p
+class="hms-meta"><time
+class="entry-date published" datetime="2018-10-03T18:38:50+00:00">October 3, 2018</time><time
+class="updated" datetime="2018-10-04T12:58:52+00:00">October 4, 2018</time></p></div><div
+class="hm-rel-post">
+<a
+href="https://codersden.in/how-to-get-last-executed-query-in-laravel/" rel="bookmark" title="How to get last executed query in Laravel?">
+<img
+width="348" height="215" src="https://codersden.in/wp-content/uploads/2018/02/Laravel-348x215.jpg" class="attachment-hitmag-grid size-hitmag-grid wp-post-image" alt="Laravel" />                    </a><h3 class="post-title">
+<a
+href="https://codersden.in/how-to-get-last-executed-query-in-laravel/" rel="bookmark" title="How to get last executed query in Laravel?">
+How to get last executed query in Laravel?                        </a></h3><p
+class="hms-meta"><time
+class="entry-date published" datetime="2018-09-26T12:36:02+00:00">September 26, 2018</time><time
+class="updated" datetime="2018-10-04T12:59:59+00:00">October 4, 2018</time></p></div></div></div>
+<nav
+class="navigation post-navigation" role="navigation"><h2 class="screen-reader-text">Post navigation</h2><div
+class="nav-links"><div
+class="nav-previous"><a
+href="https://codersden.in/email-verification-new-feature-of-laravel-5-7/" rel="prev"><span
+class="meta-nav" aria-hidden="true">Previous Article</span> <span
+class="post-title">Email Verification &#8211; New Feature of Laravel 5.7</span></a></div><div
+class="nav-next"><a
+href="https://codersden.in/reset-or-change-mysql-root-user-password-on-ubuntu-linux/" rel="next"><span
+class="meta-nav" aria-hidden="true">Next Article</span> <span
+class="post-title">Reset or Change MySQL root user Password on Ubuntu Linux</span></a></div></div>
+</nav><div
+class="hm-authorbox"><div
+class="hm-author-img">
+<img
+alt='' src='https://secure.gravatar.com/avatar/f22ec41ee953c986c579604f608d4633?s=100&#038;r=g' srcset='https://secure.gravatar.com/avatar/f22ec41ee953c986c579604f608d4633?s=200&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></div><div
+class="hm-author-content"><h4 class="author-name">About codersden</h4><p
+class="author-description"></p>
+<a
+class="author-posts-link" href="https://codersden.in/author/codersden/" title="codersden">
+View all posts by codersden &rarr;        </a></div></div><div
+id="comments" class="comments-area"><div
+id="respond" class="comment-respond"><h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a
+rel="nofollow" id="cancel-comment-reply-link" href="/laravel-5-7-http-url-redirects/#respond" style="display:none;">Cancel reply</a></small></h3><p
+class="must-log-in">You must be <a
+href="https://codersden.in/wp-login.php?redirect_to=https%3A%2F%2Fcodersden.in%2Flaravel-5-7-http-url-redirects%2F">logged in</a> to post a comment.</p></div></div></main></div><aside
+id="secondary" class="widget-area" role="complementary">
+<section
+id="recent-posts-3" class="widget widget_recent_entries"><h4 class="widget-title">Recent Posts</h4><ul><li>
+<a
+href="https://codersden.in/reset-or-change-mysql-root-user-password-on-ubuntu-linux/">Reset or Change MySQL root user Password on Ubuntu Linux</a></li><li>
+<a
+href="https://codersden.in/laravel-5-7-http-url-redirects/">Laravel 5.7 HTTP URL Redirects</a></li><li>
+<a
+href="https://codersden.in/email-verification-new-feature-of-laravel-5-7/">Email Verification &#8211; New Feature of Laravel 5.7</a></li><li>
+<a
+href="https://codersden.in/how-to-fix-laravel-sqlstate42000-syntax-error-or-access-violation-1071-specified-key-was-too-long/">How To Fix Laravel SQLSTATE[42000]: Syntax Error Or Access Violation 1071 Specified key was too long</a></li><li>
+<a
+href="https://codersden.in/get-mime-type-of-file-without-reading-file-metas/">Get Mime Type of file without reading file metas</a></li></ul>
+</section><section
+id="categories-4" class="widget widget_categories"><h4 class="widget-title">Categories</h4><ul><li
+class="cat-item cat-item-66"><a
+href="https://codersden.in/category/codeigniter/" >Codeigniter</a> (1)</li><li
+class="cat-item cat-item-56"><a
+href="https://codersden.in/category/how-to/" >How To</a> (24)</li><li
+class="cat-item cat-item-7"><a
+href="https://codersden.in/category/htaccess/" >htaccess</a> (1)</li><li
+class="cat-item cat-item-59"><a
+href="https://codersden.in/category/interview-qas/" >Interview QAs</a> (13)</li><li
+class="cat-item cat-item-37"><a
+href="https://codersden.in/category/javascript/" >Javascript</a> (1)</li><li
+class="cat-item cat-item-41"><a
+href="https://codersden.in/category/laravel/" >Laravel</a> (8)</li><li
+class="cat-item cat-item-36"><a
+href="https://codersden.in/category/linux/" >Linux</a> (11)</li><li
+class="cat-item cat-item-55"><a
+href="https://codersden.in/category/mongo/" >Mongo</a> (1)</li><li
+class="cat-item cat-item-26"><a
+href="https://codersden.in/category/mysql/" >MySql</a> (9)</li><li
+class="cat-item cat-item-8"><a
+href="https://codersden.in/category/php/" >PHP</a> (19)</li><li
+class="cat-item cat-item-75"><a
+href="https://codersden.in/category/phpmyadmin/" >phpMyAdmin</a> (2)</li><li
+class="cat-item cat-item-71"><a
+href="https://codersden.in/category/ruby/" >Ruby</a> (7)</li><li
+class="cat-item cat-item-57"><a
+href="https://codersden.in/category/tips-tricks/" >Tips &amp; Tricks</a> (4)</li><li
+class="cat-item cat-item-5"><a
+href="https://codersden.in/category/wordpress/" >Wordpress</a> (7)</li></ul>
+</section><section
+id="text-6" class="widget widget_text"><h4 class="widget-title">Follow Us Facebook</h4><div
+class="textwidget"><div
+class="fb-page" data-href="https://www.facebook.com/CodersDen1/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote
+class="fb-xfbml-parse-ignore" cite="https://www.facebook.com/CodersDen1/"><p><a
+href="https://www.facebook.com/CodersDen1/">CodersDen</a></p></blockquote></div></div>
+</section><section
+id="text-8" class="widget widget_text"><h4 class="widget-title">Follow Us Instagram</h4><div
+class="textwidget"><div
+id="sb_instagram" class="sbi sbi_mob_col_auto sbi_col_4" style="width:100%; padding-bottom: 10px; " data-id="7067457974" data-num="20" data-res="auto" data-cols="4" data-options='{&quot;sortby&quot;: &quot;none&quot;, &quot;showbio&quot;: &quot;false&quot;,&quot;feedID&quot;: &quot;7067457974&quot;, &quot;headercolor&quot;: &quot;&quot;, &quot;imagepadding&quot;: &quot;5&quot;,&quot;mid&quot;: &quot;M2E4MWE5Zg==&quot;, &quot;disablecache&quot;: &quot;false&quot;, &quot;sbiCacheExists&quot;: &quot;false&quot;,&quot;callback&quot;: &quot;OTY1ZTM4MTJmYjU5.NGViMjkzYzUxNTFkZWM0YmQzMmU=&quot;, &quot;sbiHeaderCache&quot;: &quot;false&quot;}'><div
+class="sb_instagram_header" style="padding: 10px; padding-bottom: 0;"></div><div
+id="sbi_images" style="padding: 5px;"><div
+class="sbi_loader"></div></div><div
+id="sbi_load" class="sbi_hidden"><a
+class="sbi_load_btn" href="javascript:void(0);" style="display: none; "><span
+class="sbi_btn_text">Load More...</span><div
+class="sbi_loader sbi_hidden"></div></a><div
+class="sbi_follow_btn"><a
+href="https://www.instagram.com/" style="" target="_blank"><i
+class="fa fab fa-instagram"></i>Follow on Instagram</a></div></div></div></div>
+</section></aside></div></div><footer
+id="colophon" class="site-footer" role="contentinfo"><div
+class="hm-container"><div
+class="footer-widget-area"><div
+class="footer-sidebar" role="complementary"></div><div
+class="footer-sidebar" role="complementary"></div><div
+class="footer-sidebar" role="complementary"></div></div></div><div
+class="site-info"><div
+class="hm-container"><div
+class="site-info-owner">
+Copyright &#169; 2018 <a
+href="https://codersden.in/" title="Coders Den" >Coders Den</a>.</div><div
+class="site-info-designer">
+Powered by <a
+href="https://wordpress.org" target="_blank" title="WordPress">WordPress</a> and <a
+href="https://themezhut.com/themes/hitmag/" target="_blank" title="HitMag WordPress Theme">HitMag</a>.</div></div></div>
+</footer></div> <script type="text/javascript">var sbiajaxurl = "https://codersden.in/wp-admin/admin-ajax.php";</script> <script type="text/javascript">document.addEventListener("DOMContentLoaded", function() {
+				var swpButtonsExist = document.getElementsByClassName( "swp_social_panel" ).length > 0;
+				if (swpButtonsExist) {
+					swp_admin_ajax = "https://codersden.in/wp-admin/admin-ajax.php";
+					swp_post_id=389;
+					swp_post_url= "https://codersden.in/laravel-5-7-http-url-redirects/";
+					swp_post_recovery_url = "";
+					socialWarfarePlugin.fetchFacebookShares();
+				}
+			});</script> <script type='text/javascript'>var wpcf7 = {"apiSettings":{"root":"https:\/\/codersden.in\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"};</script> <script type="text/javascript" src="https://codersden.in/wp-content/cache/minify/0fef6.js"></script> <script type='text/javascript'>var sb_instagram_js_options = {"sb_instagram_at":"7067457974.M2E4MWE5Zg==.OTY1ZTM4MTJmYjU5.NGViMjkzYzUxNTFkZWM0YmQzMmU=","font_method":"svg"};</script> <script type="text/javascript" src="https://codersden.in/wp-content/cache/minify/6548c.js"></script> <script type='text/javascript'>var ezTOC = {"smooth_scroll":"1","visibility_hide_by_default":"","width":"auto","scroll_offset":"30"};</script> <script type="text/javascript" src="https://codersden.in/wp-content/cache/minify/53887.js"></script> <div
+class="swp_social_panelSide swp_floating_panel swp_social_panel swp_ swp_default_full_color swp_individual_full_color swp_other_full_color slide
+swp_float_left
+" data-panel-position="below scale-0" data-float="left" data-count="5" data-float-color="#ffffff" data-min-width="1100" data-transition="slide" data-float-mobile=""><div
+class="nc_tweetContainer swp_facebook" data-network="facebook"><a
+rel="nofollow noreferrer noopener" target="_blank" href="https://www.facebook.com/share.php?u=https%3A%2F%2Fcodersden.in%2Flaravel-5-7-http-url-redirects%2F" data-link="https://www.facebook.com/share.php?u=https%3A%2F%2Fcodersden.in%2Flaravel-5-7-http-url-redirects%2F" class="nc_tweet"><span
+class="swp_count swp_hide"><span
+class="iconFiller"><span
+class="spaceManWilly"><i
+class="sw swp_facebook_icon"></i><span
+class="swp_share">Share</span></span></span></span></a></div><div
+class="nc_tweetContainer swp_twitter" data-network="twitter"><a
+rel="nofollow noreferrer noopener" target="_blank" href="https://twitter.com/intent/tweet?text=Laravel+5.7+HTTP+URL+Redirects&url=https%3A%2F%2Fcodersden.in%2Flaravel-5-7-http-url-redirects%2F" data-link="https://twitter.com/intent/tweet?text=Laravel+5.7+HTTP+URL+Redirects&url=https%3A%2F%2Fcodersden.in%2Flaravel-5-7-http-url-redirects%2F" class="nc_tweet"><span
+class="swp_count swp_hide"><span
+class="iconFiller"><span
+class="spaceManWilly"><i
+class="sw swp_twitter_icon"></i><span
+class="swp_share">Tweet</span></span></span></span></a></div><div
+class="nc_tweetContainer swp_pinterest" data-network="pinterest"><a
+rel="nofollow noreferrer noopener" class="nc_tweet noPop" onClick="var e=document.createElement('script');
+e.setAttribute('type','text/javascript');
+e.setAttribute('charset','UTF-8');
+e.setAttribute('src','//assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);
+document.body.appendChild(e);
+" ><span
+class="swp_count swp_hide"><span
+class="iconFiller"><span
+class="spaceManWilly"><i
+class="sw swp_pinterest_icon"></i><span
+class="swp_share">Pin</span></span></span></span></a></div><div
+class="nc_tweetContainer swp_google_plus" data-network="google_plus"><a
+rel="nofollow noreferrer noopener" target="_blank" href="https://plus.google.com/share?url=https%3A%2F%2Fcodersden.in%2Flaravel-5-7-http-url-redirects%2F" data-link="https://plus.google.com/share?url=https%3A%2F%2Fcodersden.in%2Flaravel-5-7-http-url-redirects%2F" class="nc_tweet"><span
+class="swp_count swp_hide"><span
+class="iconFiller"><span
+class="spaceManWilly"><i
+class="sw swp_google_plus_icon"></i><span
+class="swp_share">+1</span></span></span></span></a></div><div
+class="nc_tweetContainer swp_linkedin" data-network="linkedin"><a
+rel="nofollow noreferrer noopener" target="_blank" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fcodersden.in%2Flaravel-5-7-http-url-redirects%2F" data-link="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fcodersden.in%2Flaravel-5-7-http-url-redirects%2F" class="nc_tweet"><span
+class="swp_count swp_hide"><span
+class="iconFiller"><span
+class="spaceManWilly"><i
+class="sw swp_linkedin_icon"></i><span
+class="swp_share">Share</span></span></span></span></a></div><div
+class="nc_tweetContainer total_shares total_sharesalt" ><span
+class="swp_count ">0 <span
+class="swp_label">Shares</span></span></div></div><script type="text/javascript">var swpFloatBeforeContent = false;var swpClickTracking = false;</script></body></html>

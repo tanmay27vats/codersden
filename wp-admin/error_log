@@ -1,0 +1,2 @@
+[02-Jan-2018 19:15:13 UTC] PHP Fatal error:  Cannot redeclare add_term_meta() (previously declared in /home/jpinow/public_html/codersden.in/wp-includes/taxonomy.php:1137) in /home/jpinow/public_html/codersden.in/wp-content/themes/buyshop/framework/inc/taxonomy-metadata.php on line 103
+[02-Jan-2018 19:15:46 UTC] PHP Fatal error:  Cannot redeclare add_term_meta() (previously declared in /home/jpinow/public_html/codersden.in/wp-includes/taxonomy.php:1137) in /home/jpinow/public_html/codersden.in/wp-content/themes/buyshop/framework/inc/taxonomy-metadata.php on line 103

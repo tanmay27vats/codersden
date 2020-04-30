@@ -1,0 +1,801 @@
+<!DOCTYPE html><html
+lang="en-US" prefix="og: http://ogp.me/ns#"><head><link
+rel="stylesheet" type="text/css" href="https://codersden.in/wp-content/cache/minify/36d28.css" media="all" /><meta
+charset="UTF-8"><meta
+name="viewport" content="width=device-width, initial-scale=1"><link
+rel="profile" href="http://gmpg.org/xfn/11"><title>Web Development Code Tips &amp; Tricks - CodersDen</title><style>@font-face {font-family: "sw-icon-font";src:url("https://codersden.in/wp-content/plugins/social-warfare/assets/fonts/sw-icon-font.eot?ver=3.3.3");src:url("https://codersden.in/wp-content/plugins/social-warfare/assets/fonts/sw-icon-font.eot?ver=3.3.3#iefix") format("embedded-opentype"),url("https://codersden.in/wp-content/plugins/social-warfare/assets/fonts/sw-icon-font.woff?ver=3.3.3") format("woff"),
+	url("https://codersden.in/wp-content/plugins/social-warfare/assets/fonts/sw-icon-font.ttf?ver=3.3.3") format("truetype"),url("https://codersden.in/wp-content/plugins/social-warfare/assets/fonts/sw-icon-font.svg?ver=3.3.3#1445203416") format("svg");font-weight: normal;font-style: normal;}</style><meta
+name="description" content="CoderDen is a blogging site for coders where they can submit their coding tips &amp; tricks. You just need to submit your code via contact us. We&#039;ll create your contributor account on our site. If you are coder/developer don&#039;t hesitate to submit your trips &amp; tricks to help other coders."/><link
+rel="canonical" href="https://codersden.in/" /><meta
+property="og:locale" content="en_US" /><meta
+property="og:type" content="website" /><meta
+property="og:title" content="Web Development Code Tips &amp; Tricks - CodersDen" /><meta
+property="og:description" content="CoderDen is a blogging site for coders where they can submit their coding tips &amp; tricks. You just need to submit your code via contact us. We&#039;ll create your contributor account on our site. If you are coder/developer don&#039;t hesitate to submit your trips &amp; tricks to help other coders." /><meta
+property="og:url" content="https://codersden.in/" /><meta
+property="og:site_name" content="Coders Den" /><meta
+name="twitter:card" content="summary_large_image" /><meta
+name="twitter:description" content="CoderDen is a blogging site for coders where they can submit their coding tips &amp; tricks. You just need to submit your code via contact us. We&#039;ll create your contributor account on our site. If you are coder/developer don&#039;t hesitate to submit your trips &amp; tricks to help other coders." /><meta
+name="twitter:title" content="Web Development Code Tips &amp; Tricks - CodersDen" /> <script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/codersden.in\/","name":"Coders Den","potentialAction":{"@type":"SearchAction","target":"https:\/\/codersden.in\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script> <link
+rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' /><link
+rel='dns-prefetch' href='//fonts.googleapis.com' /><link
+rel='dns-prefetch' href='//s.w.org' /><link
+rel="alternate" type="application/rss+xml" title="Coders Den &raquo; Feed" href="https://codersden.in/feed/" /><link
+rel="alternate" type="application/rss+xml" title="Coders Den &raquo; Comments Feed" href="https://codersden.in/comments/feed/" /> <script type="text/javascript">window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/codersden.in\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);</script> <style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style><link
+rel='stylesheet' id='sb-font-awesome-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='all' /><style id='ez-toc-inline-css' type='text/css'>div#ez-toc-container p.ez-toc-title {font-size: 120%;}div#ez-toc-container p.ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container {background: #fff;border: 1px solid #ddd;}div#ez-toc-container p.ez-toc-title {color: #1e9296;}div#ez-toc-container ul.ez-toc-list a {color: #1e9296;}div#ez-toc-container ul.ez-toc-list a:hover {color: #dd574c;}div#ez-toc-container ul.ez-toc-list a:visited {color: #bf2a1c;}</style><link
+rel='stylesheet' id='hitmag-fonts-css'  href='//fonts.googleapis.com/css?family=Ubuntu%3A400%2C500%2C700%7CLato%3A400%2C700%2C400italic%2C700italic%7COpen+Sans%3A400%2C400italic%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' /> <script type="text/javascript" src="https://codersden.in/wp-content/cache/minify/df983.js"></script> <script type='text/javascript'>var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"https:\/\/codersden.in\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};</script> <script type="text/javascript" src="https://codersden.in/wp-content/cache/minify/49ed6.js"></script> <!--[if lt IE 9]> <script type='text/javascript' src='https://codersden.in/wp-content/themes/hitmag/js/html5shiv.min.js?ver=4.9.8'></script> <![endif]--><link
+rel='https://api.w.org/' href='https://codersden.in/wp-json/' /><link
+rel="EditURI" type="application/rsd+xml" title="RSD" href="https://codersden.in/xmlrpc.php?rsd" /><link
+rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://codersden.in/wp-includes/wlwmanifest.xml" /><meta
+name="generator" content="WordPress 4.9.8" /><link
+rel='shortlink' href='https://codersden.in/' /><link
+rel="alternate" type="application/json+oembed" href="https://codersden.in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcodersden.in%2F" /><link
+rel="alternate" type="text/xml+oembed" href="https://codersden.in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcodersden.in%2F&#038;format=xml" /><style type="text/css">.ez-toc-icon-toggle:before {
+color: #1e9296;
+}
+div#ez-toc-container p.ez-toc-title {
+font-weight: bold;
+}</style> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111542487-2"></script> <script>window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111542487-2');</script>  <script>!function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '402537686872461');
+  fbq('track', 'PageView');</script> <noscript><img
+height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=402537686872461&ev=PageView&noscript=1"
+/></noscript>
+ <script type="text/javascript">(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//codersden.in/?wordfence_lh=1&hid=76CA028EE4002B639C8A00428E9137AB');</script> <style type="text/css">button,
+			input[type="button"],
+			input[type="reset"],
+			input[type="submit"] {
+				background: #1e9296;
+			}
+
+            .th-readmore {
+                background: #1e9296;
+            }           
+
+            a:hover {
+                color: #1e9296;
+            } 
+
+            .main-navigation a:hover {
+                background-color: #1e9296;
+            }
+
+            .main-navigation .current_page_item > a,
+            .main-navigation .current-menu-item > a,
+            .main-navigation .current_page_ancestor > a,
+            .main-navigation .current-menu-ancestor > a {
+                background-color: #1e9296;
+            }
+
+            #main-nav-button:hover {
+                background-color: #1e9296;
+            }
+
+            .post-navigation .post-title:hover {
+                color: #1e9296;
+            }
+
+            .top-navigation a:hover {
+                color: #1e9296;
+            }
+
+            .top-navigation ul ul a:hover {
+                background: #1e9296;
+            }
+
+            #top-nav-button:hover {
+                color: #1e9296;
+            }
+
+            .responsive-mainnav li a:hover,
+            .responsive-topnav li a:hover {
+                background: #1e9296;
+            }
+
+            #hm-search-form .search-form .search-submit {
+                background-color: #1e9296;
+            }
+
+            .nav-links .current {
+                background: #1e9296;
+            }
+
+            .elementor-widget-container h5,
+            .widget-title {
+                border-bottom: 2px solid #1e9296;
+            }
+
+            .footer-widget-title {
+                border-bottom: 2px solid #1e9296;
+            }
+
+            .widget-area a:hover {
+                color: #1e9296;
+            }
+
+            .footer-widget-area .widget a:hover {
+                color: #1e9296;
+            }
+
+            .site-info a:hover {
+                color: #1e9296;
+            }
+
+            .search-form .search-submit {
+                background: #1e9296;
+            }
+
+            .hmb-entry-title a:hover {
+                color: #1e9296;
+            }
+
+            .hmb-entry-meta a:hover,
+            .hms-meta a:hover {
+                color: #1e9296;
+            }
+
+            .hms-title a:hover {
+                color: #1e9296;
+            }
+
+            .hmw-grid-post .post-title a:hover {
+                color: #1e9296;
+            }
+
+            .footer-widget-area .hmw-grid-post .post-title a:hover,
+            .footer-widget-area .hmb-entry-title a:hover,
+            .footer-widget-area .hms-title a:hover {
+                color: #1e9296;
+            }
+
+            .hm-tabs-wdt .ui-state-active {
+                border-bottom: 2px solid #1e9296;
+            }
+
+            a.hm-viewall {
+                background: #1e9296;
+            }
+
+            #hitmag-tags a,
+            .widget_tag_cloud .tagcloud a {
+                background: #1e9296;
+            }
+
+            .site-title a {
+                color: #1e9296;
+            }
+
+            .hitmag-post .entry-title a:hover {
+                color: #1e9296;
+            }
+
+            .hitmag-post .entry-meta a:hover {
+                color: #1e9296;
+            }
+
+            .cat-links a {
+                color: #1e9296;
+            }
+
+            .hitmag-single .entry-meta a:hover {
+                color: #1e9296;
+            }
+
+            .hitmag-single .author a:hover {
+                color: #1e9296;
+            }
+
+            .hm-author-content .author-posts-link {
+                color: #1e9296;
+            }
+
+            .hm-tags-links a:hover {
+                background: #1e9296;
+            }
+
+            .hm-tagged {
+                background: #1e9296;
+            }
+
+            .hm-edit-link a.post-edit-link {
+                background: #1e9296;
+            }
+
+            .arc-page-title {
+                border-bottom: 2px solid #1e9296;
+            }
+
+            .srch-page-title {
+                border-bottom: 2px solid #1e9296;
+            }
+
+            .hm-slider-details .cat-links {
+                background: #1e9296;
+            }
+
+            .hm-rel-post .post-title a:hover {
+                color: #1e9296;
+            }
+
+            .comment-author a {
+                color: #1e9296;
+            }
+
+            .comment-metadata a:hover,
+            .comment-metadata a:focus,
+            .pingback .comment-edit-link:hover,
+            .pingback .comment-edit-link:focus {
+                color: #1e9296;
+            }
+
+            .comment-reply-link:hover,
+            .comment-reply-link:focus {
+                background: #1e9296;
+            }
+
+            .required {
+                color: #1e9296;
+            }
+
+            blockquote {
+                border-left: 3px solid #1e9296;
+            }
+
+            .comment-reply-title small a:before {
+                color: #1e9296;
+            }
+            
+            .woocommerce ul.products li.product h3:hover,
+            .woocommerce-widget-area ul li a:hover,
+            .woocommerce-loop-product__title:hover {
+                color: #1e9296;
+            }
+
+            .woocommerce-product-search input[type="submit"],
+            .woocommerce #respond input#submit, 
+            .woocommerce a.button, 
+            .woocommerce button.button, 
+            .woocommerce input.button,
+            .woocommerce nav.woocommerce-pagination ul li a:focus,
+            .woocommerce nav.woocommerce-pagination ul li a:hover,
+            .woocommerce nav.woocommerce-pagination ul li span.current,
+            .woocommerce span.onsale,
+            .woocommerce-widget-area .widget-title,
+            .woocommerce #respond input#submit.alt,
+            .woocommerce a.button.alt,
+            .woocommerce button.button.alt,
+            .woocommerce input.button.alt {
+                background: #1e9296;
+            }</style><style type="text/css">.site-title a,
+		.site-description {
+			color: #1e9296;
+		}</style><style type="text/css" id="custom-background-css">body.custom-background { background-color: #ffffff; background-image: url("https://codersden.in/wp-content/uploads/2017/12/desktop-top.jpg"); background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; }</style><link
+rel="icon" href="https://codersden.in/wp-content/uploads/2018/02/cropped-html-tag-32x32.jpg" sizes="32x32" /><link
+rel="icon" href="https://codersden.in/wp-content/uploads/2018/02/cropped-html-tag-192x192.jpg" sizes="192x192" /><link
+rel="apple-touch-icon-precomposed" href="https://codersden.in/wp-content/uploads/2018/02/cropped-html-tag-180x180.jpg" /><meta
+name="msapplication-TileImage" content="https://codersden.in/wp-content/uploads/2018/02/cropped-html-tag-270x270.jpg" /><style type="text/css" id="wp-custom-css">code, kbd, tt, var {
+    background-color: rgba(243, 228, 175, 0.60);
+    padding: 5px;
+    color: #000;
+}</style></head><body
+class="home page-template page-template-template-magazine page-template-template-magazine-php page page-id-4 custom-background wp-custom-logo th-right-sidebar"><div
+id="fb-root"></div> <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> <div
+id="page" class="site hitmag-wrapper">
+<a
+class="skip-link screen-reader-text" href="#content">Skip to content</a><header
+id="masthead" class="site-header" role="banner"><div
+class="hm-top-bar"><div
+class="hm-container"><div
+class="hm-social-menu"><div
+id="hm-menu-social" class="menu"><ul
+id="menu-social-items" class="menu-items"><li
+id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a
+title="Facebook" target="_blank" href="https://www.facebook.com/CodersDen1/"><span
+class="screen-reader-text">Facebook</span></a></li><li
+id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a
+title="Google+" target="_blank" href="https://plus.google.com/106149521355462295694"><span
+class="screen-reader-text">Google+</span></a></li><li
+id="menu-item-15" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15"><a
+title="YouTube" target="_blank" href="https://www.youtube.com/channel/UC5zvFUhZvi3SvHB8fSAKo9w"><span
+class="screen-reader-text">YouTube</span></a></li><li
+id="menu-item-174" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-174"><a
+title="Instagram" target="_blank" href="https://www.instagram.com/codersden/"><span
+class="screen-reader-text">Instagram</span></a></li></ul></div></div></div></div><div
+class="header-main-area"><div
+class="hm-container"><div
+class="site-branding"><div
+class="site-branding-content"><div
+class="hm-logo">
+<a
+href="https://codersden.in/" class="custom-logo-link" rel="home" itemprop="url"><img
+width="100" height="53" src="https://codersden.in/wp-content/uploads/2018/02/cropped-CodersDen-Logo.png" class="custom-logo" alt="Coders Den" itemprop="logo" /></a></div><div
+class="hm-site-title"><h1 class="site-title"><a
+href="https://codersden.in/" rel="home">Coders Den</a></h1><p
+class="site-description">Think Twice Code Once</p></div></div></div></div></div><div
+class="hm-nav-container">
+<nav
+id="site-navigation" class="main-navigation" role="navigation"><div
+class="hm-container"><div
+class="menu-main-menu-container"><ul
+id="primary-menu" class="menu"><li
+id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-21"><a
+href="http://codersden.in">Home</a></li><li
+id="menu-item-175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175"><a
+href="https://codersden.in/blog/">Blog</a></li><li
+id="menu-item-91" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-91"><a
+href="https://codersden.in/category/php/">PHP</a></li><li
+id="menu-item-351" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-351"><a
+href="https://codersden.in/category/ruby/">Ruby</a></li><li
+id="menu-item-92" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-92"><a
+href="https://codersden.in/category/wordpress/">WordPress</a></li><li
+id="menu-item-93" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-93"><a
+href="https://codersden.in/category/mysql/">MySql</a></li><li
+id="menu-item-94" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-94"><a
+href="https://codersden.in/category/htaccess/">htaccess</a></li><li
+id="menu-item-95" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-95"><a
+href="https://codersden.in/category/linux/">Linux</a></li><li
+id="menu-item-96" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-96"><a
+href="https://codersden.in/category/laravel/">Laravel</a></li><li
+id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a
+href="https://codersden.in/contact-us/">Contact Us</a></li></ul></div><div
+class="hm-search-button-icon"></div><div
+class="hm-search-box-container"><div
+class="hm-search-box"><form
+role="search" method="get" class="search-form" action="https://codersden.in/">
+<label>
+<span
+class="screen-reader-text">Search for:</span>
+<input
+type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+</label>
+<input
+type="submit" class="search-submit" value="Search" /></form></div></div></div>
+</nav><div
+class="hm-nwrap">
+<a
+href="#" class="navbutton" id="main-nav-button">Main Menu</a></div><div
+class="responsive-mainnav"></div></div>
+</header><div
+id="content" class="site-content"><div
+class="hm-container"><div
+id="primary" class="content-area">
+<main
+id="main" class="site-main" role="main"><div
+class="hitmag-featured-slider">
+<section
+class="slider"><div
+id="hm-slider" class="flexslider"><ul
+class="slides"><li><div
+class="hm-slider-container" data-loc="https://codersden.in/reset-or-change-mysql-root-user-password-on-ubuntu-linux/"><div
+class="hm-slide-holder" style="background: url(https://codersden.in/wp-content/uploads/2018/02/MySQL-Logo.jpg);"><div
+class="hm-slide-content"><div
+class="hm-slider-details"><div
+class="cat-links"><a
+href="https://codersden.in/category/linux/" rel="category tag">Linux</a> / <a
+href="https://codersden.in/category/mysql/" rel="category tag">MySql</a> / <a
+href="https://codersden.in/category/tips-tricks/" rel="category tag">Tips &amp; Tricks</a></div>                                            <a
+href="https://codersden.in/reset-or-change-mysql-root-user-password-on-ubuntu-linux/" rel="bookmark"><h3 class="hm-slider-title">Reset or Change MySQL root user Password on Ubuntu Linux</h3></a><div
+class="slide-entry-meta">
+<span
+class="posted-on"><a
+href="https://codersden.in/reset-or-change-mysql-root-user-password-on-ubuntu-linux/" rel="bookmark"><time
+class="entry-date published" datetime="2018-10-05T13:18:28+00:00">October 5, 2018</time><time
+class="updated" datetime="2018-10-05T13:19:36+00:00">October 5, 2018</time></a></span><span
+class="meta-sep"> - </span><span
+class="byline"> by <span
+class="author vcard"><a
+class="url fn n" href="https://codersden.in/author/codersden/">codersden</a></span></span><span
+class="meta-sep"> - </span><span
+class="comments-link"><a
+href="https://codersden.in/reset-or-change-mysql-root-user-password-on-ubuntu-linux/#respond">Leave a Comment</a></span></div></div></div></div></div></li><li><div
+class="hm-slider-container" data-loc="https://codersden.in/laravel-5-7-http-url-redirects/"><div
+class="hm-slide-holder" style="background: url(https://codersden.in/wp-content/uploads/2018/02/Laravel.jpg);"><div
+class="hm-slide-content"><div
+class="hm-slider-details"><div
+class="cat-links"><a
+href="https://codersden.in/category/how-to/" rel="category tag">How To</a> / <a
+href="https://codersden.in/category/interview-qas/" rel="category tag">Interview QAs</a> / <a
+href="https://codersden.in/category/laravel/" rel="category tag">Laravel</a></div>                                            <a
+href="https://codersden.in/laravel-5-7-http-url-redirects/" rel="bookmark"><h3 class="hm-slider-title">Laravel 5.7 HTTP URL Redirects</h3></a><div
+class="slide-entry-meta">
+<span
+class="posted-on"><a
+href="https://codersden.in/laravel-5-7-http-url-redirects/" rel="bookmark"><time
+class="entry-date published updated" datetime="2018-10-04T19:07:35+00:00">October 4, 2018</time></a></span><span
+class="meta-sep"> - </span><span
+class="byline"> by <span
+class="author vcard"><a
+class="url fn n" href="https://codersden.in/author/codersden/">codersden</a></span></span><span
+class="meta-sep"> - </span><span
+class="comments-link"><a
+href="https://codersden.in/laravel-5-7-http-url-redirects/#respond">Leave a Comment</a></span></div></div></div></div></div></li><li><div
+class="hm-slider-container" data-loc="https://codersden.in/email-verification-new-feature-of-laravel-5-7/"><div
+class="hm-slide-holder" style="background: url(https://codersden.in/wp-content/uploads/2018/02/Laravel.jpg);"><div
+class="hm-slide-content"><div
+class="hm-slider-details"><div
+class="cat-links"><a
+href="https://codersden.in/category/how-to/" rel="category tag">How To</a> / <a
+href="https://codersden.in/category/interview-qas/" rel="category tag">Interview QAs</a> / <a
+href="https://codersden.in/category/laravel/" rel="category tag">Laravel</a></div>                                            <a
+href="https://codersden.in/email-verification-new-feature-of-laravel-5-7/" rel="bookmark"><h3 class="hm-slider-title">Email Verification &#8211; New Feature of Laravel 5.7</h3></a><div
+class="slide-entry-meta">
+<span
+class="posted-on"><a
+href="https://codersden.in/email-verification-new-feature-of-laravel-5-7/" rel="bookmark"><time
+class="entry-date published" datetime="2018-10-03T18:40:28+00:00">October 3, 2018</time><time
+class="updated" datetime="2018-10-04T12:49:43+00:00">October 4, 2018</time></a></span><span
+class="meta-sep"> - </span><span
+class="byline"> by <span
+class="author vcard"><a
+class="url fn n" href="https://codersden.in/author/codersden/">codersden</a></span></span><span
+class="meta-sep"> - </span><span
+class="comments-link"><a
+href="https://codersden.in/email-verification-new-feature-of-laravel-5-7/#respond">Leave a Comment</a></span></div></div></div></div></div></li><li><div
+class="hm-slider-container" data-loc="https://codersden.in/how-to-fix-laravel-sqlstate42000-syntax-error-or-access-violation-1071-specified-key-was-too-long/"><div
+class="hm-slide-holder" style="background: url(https://codersden.in/wp-content/uploads/2018/02/Laravel.jpg);"><div
+class="hm-slide-content"><div
+class="hm-slider-details"><div
+class="cat-links"><a
+href="https://codersden.in/category/how-to/" rel="category tag">How To</a> / <a
+href="https://codersden.in/category/laravel/" rel="category tag">Laravel</a> / <a
+href="https://codersden.in/category/phpmyadmin/" rel="category tag">phpMyAdmin</a></div>                                            <a
+href="https://codersden.in/how-to-fix-laravel-sqlstate42000-syntax-error-or-access-violation-1071-specified-key-was-too-long/" rel="bookmark"><h3 class="hm-slider-title">How To Fix Laravel SQLSTATE[42000]: Syntax Error Or Access Violation 1071 Specified key was too long</h3></a><div
+class="slide-entry-meta">
+<span
+class="posted-on"><a
+href="https://codersden.in/how-to-fix-laravel-sqlstate42000-syntax-error-or-access-violation-1071-specified-key-was-too-long/" rel="bookmark"><time
+class="entry-date published" datetime="2018-10-03T18:38:50+00:00">October 3, 2018</time><time
+class="updated" datetime="2018-10-04T12:58:52+00:00">October 4, 2018</time></a></span><span
+class="meta-sep"> - </span><span
+class="byline"> by <span
+class="author vcard"><a
+class="url fn n" href="https://codersden.in/author/codersden/">codersden</a></span></span><span
+class="meta-sep"> - </span><span
+class="comments-link"><a
+href="https://codersden.in/how-to-fix-laravel-sqlstate42000-syntax-error-or-access-violation-1071-specified-key-was-too-long/#respond">Leave a Comment</a></span></div></div></div></div></div></li><li><div
+class="hm-slider-container" data-loc="https://codersden.in/get-mime-type-of-file-without-reading-file-metas/"><div
+class="hm-slide-holder" style="background: url(https://codersden.in/wp-content/uploads/2018/02/html-tag-735x400.jpg);"><div
+class="hm-slide-content"><div
+class="hm-slider-details"><div
+class="cat-links"><a
+href="https://codersden.in/category/interview-qas/" rel="category tag">Interview QAs</a> / <a
+href="https://codersden.in/category/php/" rel="category tag">PHP</a></div>                                            <a
+href="https://codersden.in/get-mime-type-of-file-without-reading-file-metas/" rel="bookmark"><h3 class="hm-slider-title">Get Mime Type of file without reading file metas</h3></a><div
+class="slide-entry-meta">
+<span
+class="posted-on"><a
+href="https://codersden.in/get-mime-type-of-file-without-reading-file-metas/" rel="bookmark"><time
+class="entry-date published" datetime="2018-10-03T12:17:37+00:00">October 3, 2018</time><time
+class="updated" datetime="2018-10-03T12:57:40+00:00">October 3, 2018</time></a></span><span
+class="meta-sep"> - </span><span
+class="byline"> by <span
+class="author vcard"><a
+class="url fn n" href="https://codersden.in/author/codersden/">codersden</a></span></span><span
+class="meta-sep"> - </span><span
+class="comments-link"><a
+href="https://codersden.in/get-mime-type-of-file-without-reading-file-metas/#respond">Leave a Comment</a></span></div></div></div></div></div></li></ul></div>
+</section><div
+id="hm-carousel" class="flexslider"><ul
+class="slides"><li><div
+class="hm-thumb-bg"><img
+src="https://codersden.in/wp-content/uploads/2018/02/MySQL-Logo-135x93.jpg" /></div></li><li><div
+class="hm-thumb-bg"><img
+src="https://codersden.in/wp-content/uploads/2018/02/Laravel-135x93.jpg" /></div></li><li><div
+class="hm-thumb-bg"><img
+src="https://codersden.in/wp-content/uploads/2018/02/Laravel-135x93.jpg" /></div></li><li><div
+class="hm-thumb-bg"><img
+src="https://codersden.in/wp-content/uploads/2018/02/Laravel-135x93.jpg" /></div></li><li><div
+class="hm-thumb-bg"><img
+src="https://codersden.in/wp-content/uploads/2018/02/html-tag-135x93.jpg" /></div></li></ul></div></div><div
+id="swp_popular_posts_widget-2" class="widget widget_swp_popular_posts_widget"><div
+class="widget-text swp_widget_box" style="background:transparent;"><h4 class="widget-title"><span
+class="widgettitle widget-title swp_popular_posts_title" style="">Popular Posts</span></h4><div
+class="swp_popular_post"><a
+href="https://codersden.in/yahoo-weather-yql-api-without-authentication/"><img
+style="width:100px;height:100px;" class="swp_pop_thumb" src="https://codersden.in/wp-content/uploads/2018/01/weather-150x150.png" title="Yahoo weather YQL API without authentication" alt="Yahoo weather YQL API without authentication" nopin="nopin" /></a><a
+style="font-size:100%;" class="swp_popularity" href="https://codersden.in/yahoo-weather-yql-api-without-authentication/"><b>Yahoo weather YQL API without authentication</b><span
+class="swp_pop_count">8 Total Shares</span></a></div><div
+class="swp_clearfix"></div><div
+class="swp_popular_post"><a
+href="https://codersden.in/create-mysql-connection/"><img
+style="width:100px;height:100px;" class="swp_pop_thumb" src="https://codersden.in/wp-content/uploads/2018/02/MySQL-Logo-150x150.jpg" title="How to create a MySQL connection?" alt="How to create a MySQL connection?" nopin="nopin" /></a><a
+style="font-size:100%;" class="swp_popularity" href="https://codersden.in/create-mysql-connection/"><b>How to create a MySQL connection?</b><span
+class="swp_pop_count">4 Total Shares</span></a></div><div
+class="swp_clearfix"></div><div
+class="swp_popular_post"><a
+href="https://codersden.in/wordpress-rename-default-label-posts-news-something-else/"><img
+style="width:100px;height:100px;" class="swp_pop_thumb" src="https://codersden.in/wp-content/uploads/2017/12/post-to-news-3-150x150.png" title="WordPress: Rename default label “Posts” to “News” OR something else" alt="WordPress: Rename default label “Posts” to “News” OR something else" nopin="nopin" /></a><a
+style="font-size:100%;" class="swp_popularity" href="https://codersden.in/wordpress-rename-default-label-posts-news-something-else/"><b>WordPress: Rename default label “Posts” to “News” OR something else</b><span
+class="swp_pop_count">3 Total Shares</span></a></div><div
+class="swp_clearfix"></div><div
+class="swp_popular_post"><a
+href="https://codersden.in/replace-french-letters-english-letters/"><img
+style="width:100px;height:100px;" class="swp_pop_thumb" src="https://codersden.in/wp-content/uploads/2018/01/translate-150x150.jpg" title="Replace French letters with their English letters" alt="Replace French letters with their English letters" nopin="nopin" /></a><a
+style="font-size:100%;" class="swp_popularity" href="https://codersden.in/replace-french-letters-english-letters/"><b>Replace French letters with their English letters</b><span
+class="swp_pop_count">3 Total Shares</span></a></div><div
+class="swp_clearfix"></div><div
+class="swp_popular_post"><a
+href="https://codersden.in/install-imagick-php-7-x-ubuntu-14/"><img
+style="width:100px;height:100px;" class="swp_pop_thumb" src="https://codersden.in/wp-content/uploads/2018/02/ubuntu-imagick-150x150.png" title="How to install iMagick for PHP 7.x in Ubuntu 14 and above" alt="How to install iMagick for PHP 7.x in Ubuntu 14 and above" nopin="nopin" /></a><a
+style="font-size:100%;" class="swp_popularity" href="https://codersden.in/install-imagick-php-7-x-ubuntu-14/"><b>How to install iMagick for PHP 7.x in Ubuntu 14 and above</b><span
+class="swp_pop_count">2 Total Shares</span></a></div><div
+class="swp_clearfix"></div></div></div><div
+id="tag_cloud-2" class="widget widget_tag_cloud"><h4 class="widget-title">Tags</h4><div
+class="tagcloud"><a
+href="https://codersden.in/tag/access-live-images-locally/" class="tag-cloud-link tag-link-18 tag-link-position-1" style="font-size: 10pt;">access live images locally</a>
+<a
+href="https://codersden.in/tag/file-transfer/" class="tag-cloud-link tag-link-28 tag-link-position-2" style="font-size: 10pt;">File transfer</a>
+<a
+href="https://codersden.in/tag/how-to/" class="tag-cloud-link tag-link-58 tag-link-position-3" style="font-size: 10pt;">How To</a>
+<a
+href="https://codersden.in/tag/htaccess-image-redirect/" class="tag-cloud-link tag-link-19 tag-link-position-4" style="font-size: 10pt;">htaccess image redirect</a>
+<a
+href="https://codersden.in/tag/image-redirections/" class="tag-cloud-link tag-link-20 tag-link-position-5" style="font-size: 10pt;">image redirections</a>
+<a
+href="https://codersden.in/tag/install-php-extensions/" class="tag-cloud-link tag-link-53 tag-link-position-6" style="font-size: 10pt;">Install PHP Extensions</a>
+<a
+href="https://codersden.in/tag/install-phpmyadmin/" class="tag-cloud-link tag-link-47 tag-link-position-7" style="font-size: 10pt;">Install PhpMyAdmin</a>
+<a
+href="https://codersden.in/tag/install-php-packages/" class="tag-cloud-link tag-link-52 tag-link-position-8" style="font-size: 10pt;">Install PHP Packages</a>
+<a
+href="https://codersden.in/tag/interview-questions-answers/" class="tag-cloud-link tag-link-68 tag-link-position-9" style="font-size: 10pt;">Interview Questions &amp; Answers</a>
+<a
+href="https://codersden.in/tag/laravel/" class="tag-cloud-link tag-link-43 tag-link-position-10" style="font-size: 10pt;">Laravel</a>
+<a
+href="https://codersden.in/tag/laravel-5-7/" class="tag-cloud-link tag-link-81 tag-link-position-11" style="font-size: 10pt;">Laravel 5.7</a>
+<a
+href="https://codersden.in/tag/laravel-5-7-project/" class="tag-cloud-link tag-link-84 tag-link-position-12" style="font-size: 10pt;">Laravel 5.7 Project</a>
+<a
+href="https://codersden.in/tag/laravel-5-7-setup/" class="tag-cloud-link tag-link-83 tag-link-position-13" style="font-size: 10pt;">Laravel 5.7 Setup</a>
+<a
+href="https://codersden.in/tag/laravel-eloquent/" class="tag-cloud-link tag-link-86 tag-link-position-14" style="font-size: 10pt;">Laravel Eloquent</a>
+<a
+href="https://codersden.in/tag/laravel-php-framework/" class="tag-cloud-link tag-link-85 tag-link-position-15" style="font-size: 10pt;">Laravel PHP Framework</a>
+<a
+href="https://codersden.in/tag/linux-server/" class="tag-cloud-link tag-link-40 tag-link-position-16" style="font-size: 10pt;">Linux Server</a>
+<a
+href="https://codersden.in/tag/mail/" class="tag-cloud-link tag-link-34 tag-link-position-17" style="font-size: 10pt;">Mail</a>
+<a
+href="https://codersden.in/tag/mysql/" class="tag-cloud-link tag-link-33 tag-link-position-18" style="font-size: 10pt;">MySql</a>
+<a
+href="https://codersden.in/tag/mysql-connections/" class="tag-cloud-link tag-link-60 tag-link-position-19" style="font-size: 10pt;">MySQL Connections</a>
+<a
+href="https://codersden.in/tag/php/" class="tag-cloud-link tag-link-9 tag-link-position-20" style="font-size: 10pt;">PHP</a>
+<a
+href="https://codersden.in/tag/php-character-translator/" class="tag-cloud-link tag-link-25 tag-link-position-21" style="font-size: 10pt;">PHP Character Translator</a>
+<a
+href="https://codersden.in/tag/php-custom-code/" class="tag-cloud-link tag-link-24 tag-link-position-22" style="font-size: 10pt;">PHP Custom Code</a>
+<a
+href="https://codersden.in/tag/php-html-mail/" class="tag-cloud-link tag-link-61 tag-link-position-23" style="font-size: 10pt;">PHP HTML Mail</a>
+<a
+href="https://codersden.in/tag/php-mail/" class="tag-cloud-link tag-link-27 tag-link-position-24" style="font-size: 10pt;">PHP mail</a>
+<a
+href="https://codersden.in/tag/php-normalize-characters/" class="tag-cloud-link tag-link-23 tag-link-position-25" style="font-size: 10pt;">PHP Normalize Characters</a>
+<a
+href="https://codersden.in/tag/php-plain-text-mail/" class="tag-cloud-link tag-link-62 tag-link-position-26" style="font-size: 10pt;">PHP Plain Text Mail</a>
+<a
+href="https://codersden.in/tag/php-strtr/" class="tag-cloud-link tag-link-22 tag-link-position-27" style="font-size: 10pt;">PHP strtr</a>
+<a
+href="https://codersden.in/tag/php-str-replace/" class="tag-cloud-link tag-link-21 tag-link-position-28" style="font-size: 10pt;">PHP str_replace</a>
+<a
+href="https://codersden.in/tag/ruby-basic-concepts/" class="tag-cloud-link tag-link-72 tag-link-position-29" style="font-size: 10pt;">Ruby Basic Concepts</a>
+<a
+href="https://codersden.in/tag/ruby-on-rails/" class="tag-cloud-link tag-link-74 tag-link-position-30" style="font-size: 10pt;">Ruby on Rails</a>
+<a
+href="https://codersden.in/tag/ruby-tutorials/" class="tag-cloud-link tag-link-73 tag-link-position-31" style="font-size: 10pt;">Ruby Tutorials</a>
+<a
+href="https://codersden.in/tag/server-setup/" class="tag-cloud-link tag-link-39 tag-link-position-32" style="font-size: 10pt;">Server Setup</a>
+<a
+href="https://codersden.in/tag/setup-laravel-on-windows/" class="tag-cloud-link tag-link-42 tag-link-position-33" style="font-size: 10pt;">Setup Laravel on Windows</a>
+<a
+href="https://codersden.in/tag/weather-api-php-script/" class="tag-cloud-link tag-link-13 tag-link-position-34" style="font-size: 10pt;">Weather API PHP Script</a>
+<a
+href="https://codersden.in/tag/weather-php-custom-code/" class="tag-cloud-link tag-link-14 tag-link-position-35" style="font-size: 10pt;">Weather PHP Custom Code</a>
+<a
+href="https://codersden.in/tag/wordpress/" class="tag-cloud-link tag-link-6 tag-link-position-36" style="font-size: 10pt;">Wordpress</a>
+<a
+href="https://codersden.in/tag/wordpress-migration/" class="tag-cloud-link tag-link-64 tag-link-position-37" style="font-size: 10pt;">Wordpress Migration</a>
+<a
+href="https://codersden.in/tag/wordpress-rename-post/" class="tag-cloud-link tag-link-17 tag-link-position-38" style="font-size: 10pt;">Wordpress rename POST</a>
+<a
+href="https://codersden.in/tag/wordpress-setup/" class="tag-cloud-link tag-link-54 tag-link-position-39" style="font-size: 10pt;">Wordpress Setup</a>
+<a
+href="https://codersden.in/tag/wordpress-yahoo-weather-php-script/" class="tag-cloud-link tag-link-16 tag-link-position-40" style="font-size: 10pt;">Wordpress Yahoo Weather PHP Script</a>
+<a
+href="https://codersden.in/tag/wp-engine-to-wordpress/" class="tag-cloud-link tag-link-65 tag-link-position-41" style="font-size: 10pt;">WP Engine to Wordpress</a>
+<a
+href="https://codersden.in/tag/yahoo-weather/" class="tag-cloud-link tag-link-10 tag-link-position-42" style="font-size: 10pt;">Yahoo Weather</a>
+<a
+href="https://codersden.in/tag/yahoo-weather-api/" class="tag-cloud-link tag-link-11 tag-link-position-43" style="font-size: 10pt;">Yahoo Weather API</a>
+<a
+href="https://codersden.in/tag/yahoo-weather-core-php/" class="tag-cloud-link tag-link-15 tag-link-position-44" style="font-size: 10pt;">Yahoo Weather Core PHP</a>
+<a
+href="https://codersden.in/tag/yql-api/" class="tag-cloud-link tag-link-12 tag-link-position-45" style="font-size: 10pt;">YQL API</a></div></div>
+</main></div><aside
+id="secondary" class="widget-area" role="complementary">
+<section
+id="recent-posts-3" class="widget widget_recent_entries"><h4 class="widget-title">Recent Posts</h4><ul><li>
+<a
+href="https://codersden.in/reset-or-change-mysql-root-user-password-on-ubuntu-linux/">Reset or Change MySQL root user Password on Ubuntu Linux</a></li><li>
+<a
+href="https://codersden.in/laravel-5-7-http-url-redirects/">Laravel 5.7 HTTP URL Redirects</a></li><li>
+<a
+href="https://codersden.in/email-verification-new-feature-of-laravel-5-7/">Email Verification &#8211; New Feature of Laravel 5.7</a></li><li>
+<a
+href="https://codersden.in/how-to-fix-laravel-sqlstate42000-syntax-error-or-access-violation-1071-specified-key-was-too-long/">How To Fix Laravel SQLSTATE[42000]: Syntax Error Or Access Violation 1071 Specified key was too long</a></li><li>
+<a
+href="https://codersden.in/get-mime-type-of-file-without-reading-file-metas/">Get Mime Type of file without reading file metas</a></li></ul>
+</section><section
+id="categories-4" class="widget widget_categories"><h4 class="widget-title">Categories</h4><ul><li
+class="cat-item cat-item-66"><a
+href="https://codersden.in/category/codeigniter/" >Codeigniter</a> (1)</li><li
+class="cat-item cat-item-56"><a
+href="https://codersden.in/category/how-to/" >How To</a> (24)</li><li
+class="cat-item cat-item-7"><a
+href="https://codersden.in/category/htaccess/" >htaccess</a> (1)</li><li
+class="cat-item cat-item-59"><a
+href="https://codersden.in/category/interview-qas/" >Interview QAs</a> (13)</li><li
+class="cat-item cat-item-37"><a
+href="https://codersden.in/category/javascript/" >Javascript</a> (1)</li><li
+class="cat-item cat-item-41"><a
+href="https://codersden.in/category/laravel/" >Laravel</a> (8)</li><li
+class="cat-item cat-item-36"><a
+href="https://codersden.in/category/linux/" >Linux</a> (11)</li><li
+class="cat-item cat-item-55"><a
+href="https://codersden.in/category/mongo/" >Mongo</a> (1)</li><li
+class="cat-item cat-item-26"><a
+href="https://codersden.in/category/mysql/" >MySql</a> (9)</li><li
+class="cat-item cat-item-8"><a
+href="https://codersden.in/category/php/" >PHP</a> (19)</li><li
+class="cat-item cat-item-75"><a
+href="https://codersden.in/category/phpmyadmin/" >phpMyAdmin</a> (2)</li><li
+class="cat-item cat-item-71"><a
+href="https://codersden.in/category/ruby/" >Ruby</a> (7)</li><li
+class="cat-item cat-item-57"><a
+href="https://codersden.in/category/tips-tricks/" >Tips &amp; Tricks</a> (4)</li><li
+class="cat-item cat-item-5"><a
+href="https://codersden.in/category/wordpress/" >Wordpress</a> (7)</li></ul>
+</section><section
+id="text-6" class="widget widget_text"><h4 class="widget-title">Follow Us Facebook</h4><div
+class="textwidget"><div
+class="fb-page" data-href="https://www.facebook.com/CodersDen1/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote
+class="fb-xfbml-parse-ignore" cite="https://www.facebook.com/CodersDen1/"><p><a
+href="https://www.facebook.com/CodersDen1/">CodersDen</a></p></blockquote></div></div>
+</section><section
+id="text-8" class="widget widget_text"><h4 class="widget-title">Follow Us Instagram</h4><div
+class="textwidget"><div
+id="sb_instagram" class="sbi sbi_mob_col_auto sbi_col_4" style="width:100%; padding-bottom: 10px; " data-id="7067457974" data-num="20" data-res="auto" data-cols="4" data-options='{&quot;sortby&quot;: &quot;none&quot;, &quot;showbio&quot;: &quot;false&quot;,&quot;feedID&quot;: &quot;7067457974&quot;, &quot;headercolor&quot;: &quot;&quot;, &quot;imagepadding&quot;: &quot;5&quot;,&quot;mid&quot;: &quot;M2E4MWE5Zg==&quot;, &quot;disablecache&quot;: &quot;false&quot;, &quot;sbiCacheExists&quot;: &quot;false&quot;,&quot;callback&quot;: &quot;OTY1ZTM4MTJmYjU5.NGViMjkzYzUxNTFkZWM0YmQzMmU=&quot;, &quot;sbiHeaderCache&quot;: &quot;false&quot;}'><div
+class="sb_instagram_header" style="padding: 10px; padding-bottom: 0;"></div><div
+id="sbi_images" style="padding: 5px;"><div
+class="sbi_loader"></div></div><div
+id="sbi_load" class="sbi_hidden"><a
+class="sbi_load_btn" href="javascript:void(0);" style="display: none; "><span
+class="sbi_btn_text">Load More...</span><div
+class="sbi_loader sbi_hidden"></div></a><div
+class="sbi_follow_btn"><a
+href="https://www.instagram.com/" style="" target="_blank"><i
+class="fa fab fa-instagram"></i>Follow on Instagram</a></div></div></div></div>
+</section></aside></div></div><footer
+id="colophon" class="site-footer" role="contentinfo"><div
+class="hm-container"><div
+class="footer-widget-area"><div
+class="footer-sidebar" role="complementary"></div><div
+class="footer-sidebar" role="complementary"></div><div
+class="footer-sidebar" role="complementary"></div></div></div><div
+class="site-info"><div
+class="hm-container"><div
+class="site-info-owner">
+Copyright &#169; 2018 <a
+href="https://codersden.in/" title="Coders Den" >Coders Den</a>.</div><div
+class="site-info-designer">
+Powered by <a
+href="https://wordpress.org" target="_blank" title="WordPress">WordPress</a> and <a
+href="https://themezhut.com/themes/hitmag/" target="_blank" title="HitMag WordPress Theme">HitMag</a>.</div></div></div>
+</footer></div> <script type="text/javascript">var sbiajaxurl = "https://codersden.in/wp-admin/admin-ajax.php";</script> <script type='text/javascript'>var wpcf7 = {"apiSettings":{"root":"https:\/\/codersden.in\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"};</script> <script type="text/javascript" src="https://codersden.in/wp-content/cache/minify/0fef6.js"></script> <script type='text/javascript'>var sb_instagram_js_options = {"sb_instagram_at":"7067457974.M2E4MWE5Zg==.OTY1ZTM4MTJmYjU5.NGViMjkzYzUxNTFkZWM0YmQzMmU=","font_method":"svg"};</script> <script type="text/javascript" src="https://codersden.in/wp-content/cache/minify/d6b25.js"></script> <div
+class="swp_social_panelSide swp_floating_panel swp_social_panel swp_ swp_default_full_color swp_individual_full_color swp_other_full_color slide
+swp_float_left
+" data-panel-position="below scale-0" data-float="left" data-count="5" data-float-color="#ffffff" data-min-width="1100" data-transition="slide" data-float-mobile="none"><div
+class="nc_tweetContainer swp_facebook" data-network="facebook"><a
+rel="nofollow noreferrer noopener" target="_blank" href="https://www.facebook.com/share.php?u=https%3A%2F%2Fcodersden.in%2F" data-link="https://www.facebook.com/share.php?u=https%3A%2F%2Fcodersden.in%2F" class="nc_tweet"><span
+class="iconFiller"><span
+class="spaceManWilly"><i
+class="sw swp_facebook_icon"></i><span
+class="swp_share">Share</span></span></span><span
+class="swp_count">14</span></a></div><div
+class="nc_tweetContainer swp_twitter" data-network="twitter"><a
+rel="nofollow noreferrer noopener" target="_blank" href="https://twitter.com/intent/tweet?text=Home&url=https%3A%2F%2Fcodersden.in%2F" data-link="https://twitter.com/intent/tweet?text=Home&url=https%3A%2F%2Fcodersden.in%2F" class="nc_tweet"><span
+class="swp_count swp_hide"><span
+class="iconFiller"><span
+class="spaceManWilly"><i
+class="sw swp_twitter_icon"></i><span
+class="swp_share">Tweet</span></span></span></span></a></div><div
+class="nc_tweetContainer swp_pinterest" data-network="pinterest"><a
+rel="nofollow noreferrer noopener" class="nc_tweet noPop" onClick="var e=document.createElement('script');
+e.setAttribute('type','text/javascript');
+e.setAttribute('charset','UTF-8');
+e.setAttribute('src','//assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);
+document.body.appendChild(e);
+" ><span
+class="swp_count swp_hide"><span
+class="iconFiller"><span
+class="spaceManWilly"><i
+class="sw swp_pinterest_icon"></i><span
+class="swp_share">Pin</span></span></span></span></a></div><div
+class="nc_tweetContainer swp_google_plus" data-network="google_plus"><a
+rel="nofollow noreferrer noopener" target="_blank" href="https://plus.google.com/share?url=https%3A%2F%2Fcodersden.in%2F" data-link="https://plus.google.com/share?url=https%3A%2F%2Fcodersden.in%2F" class="nc_tweet"><span
+class="swp_count swp_hide"><span
+class="iconFiller"><span
+class="spaceManWilly"><i
+class="sw swp_google_plus_icon"></i><span
+class="swp_share">+1</span></span></span></span></a></div><div
+class="nc_tweetContainer swp_linkedin" data-network="linkedin"><a
+rel="nofollow noreferrer noopener" target="_blank" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fcodersden.in%2F" data-link="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fcodersden.in%2F" class="nc_tweet"><span
+class="swp_count swp_hide"><span
+class="iconFiller"><span
+class="spaceManWilly"><i
+class="sw swp_linkedin_icon"></i><span
+class="swp_share">Share</span></span></span></span></a></div><div
+class="nc_tweetContainer total_shares total_sharesalt" ><span
+class="swp_count ">14 <span
+class="swp_label">Shares</span></span></div></div><script type="text/javascript">var swpFloatBeforeContent = false;var swpClickTracking = false;</script></body></html>
